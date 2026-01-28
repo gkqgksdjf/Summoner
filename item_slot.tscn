@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfihp0gbl740y"]
+
+[ext_resource type="Script" uid="uid://buncd5e62pucu" path="res://item_slot.gd" id="1_n6cxc"]
+[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_0myub"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i83bl"]
+atlas = ExtResource("2_0myub")
+region = Rect2(26, 122, 44, 44)
+
+[node name="ItemSlot" type="Control"]
+z_index = 1
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 190.0
+offset_bottom = 190.0
+mouse_filter = 1
+script = ExtResource("1_n6cxc")
+
+[node name="slot" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 190.0
+offset_bottom = 190.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_i83bl")
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 190.0
+offset_bottom = 190.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_i83bl")
+stretch_mode = 5
+
+[node name="Selection" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 190.0
+offset_bottom = 190.0
+mouse_filter = 2
+color = Color(1, 0.77254903, 0.44705883, 0.39607844)
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
