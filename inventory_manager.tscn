@@ -1,0 +1,483 @@
+[gd_scene format=3 uid="uid://cjhrpolvcg4v0"]
+
+[ext_resource type="Script" uid="uid://ehdhgx0wxn4a" path="res://inventory_ui.gd" id="1_jn3b8"]
+[ext_resource type="Script" uid="uid://cm78jauvuadd0" path="res://inventory_manager.gd" id="1_to27r"]
+[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_5bopx"]
+[ext_resource type="Script" uid="uid://cu2fypbp1gf2j" path="res://explain_sheet.gd" id="3_o6um4"]
+[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="4_m5yu5"]
+[ext_resource type="Script" uid="uid://7oxinnbowb8s" path="res://input_number.gd" id="5_bbtsg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn3b8"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(401.7671, 204.54044, 36.819916, 35.54593)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bopx"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(16, 16, 64, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6um4"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(800, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5yu5"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(116, 338, 56, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbtsg"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(1024, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f4u5k"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(16, 16, 64, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjakb"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(768, 64, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_abqjc"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohhls"]
+atlas = SubResource("CompressedTexture2D_abqjc")
+region = Rect2(800, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67xb0"]
+atlas = ExtResource("2_5bopx")
+region = Rect2(768, 64, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d13ii"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bo4r5"]
+texture = SubResource("CompressedTexture2D_d13ii")
+region_rect = Rect2(864, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1u8w0"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c46v5"]
+texture = SubResource("CompressedTexture2D_1u8w0")
+region_rect = Rect2(864, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lswn8"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_irxrv"]
+texture = SubResource("CompressedTexture2D_lswn8")
+region_rect = Rect2(864, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xuqvo"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_568vy"]
+texture = SubResource("CompressedTexture2D_xuqvo")
+region_rect = Rect2(864, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kq58d"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ebnwy"]
+texture = SubResource("CompressedTexture2D_kq58d")
+region_rect = Rect2(864, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0odxb"]
+load_path = "res://.godot/imported/Modern_UI_Style_1_32x32.png-d40b3899c9e6aa6b60aab896501caa82.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ybipx"]
+texture = SubResource("CompressedTexture2D_0odxb")
+region_rect = Rect2(864, 0, 32, 32)
+
+[node name="InventoryManager" type="CanvasLayer" unique_id=1695723757]
+script = ExtResource("1_to27r")
+
+[node name="InventoryButton" type="TextureButton" parent="." unique_id=1520947097]
+z_index = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.6
+anchor_right = 1.0
+anchor_bottom = 0.6
+offset_left = -120.0
+offset_top = -27.5
+offset_right = -84.0
+offset_bottom = 7.5
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+texture_normal = SubResource("AtlasTexture_jn3b8")
+
+[node name="InventoryUI" type="Control" parent="." unique_id=1559020058]
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+mouse_filter = 1
+script = ExtResource("1_jn3b8")
+
+[node name="Background" type="NinePatchRect" parent="InventoryUI" unique_id=625065653]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 820.0
+offset_bottom = 458.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+texture = SubResource("AtlasTexture_5bopx")
+patch_margin_left = 17
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="ItemGrid" type="GridContainer" parent="InventoryUI/Background" unique_id=267519817]
+z_index = 1
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 12
+columns = 11
+
+[node name="CloseButton" type="TextureButton" parent="InventoryUI/Background" unique_id=721110821]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -90.0
+offset_top = -90.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+texture_normal = SubResource("AtlasTexture_o6um4")
+
+[node name="ExplainSheet" type="NinePatchRect" parent="InventoryUI/Background" unique_id=2076623151]
+custom_minimum_size = Vector2(590, 1360)
+layout_mode = 0
+offset_left = 2120.0
+offset_top = 30.0
+offset_right = 2710.0
+offset_bottom = 1390.0
+texture = SubResource("AtlasTexture_m5yu5")
+patch_margin_left = 17
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("3_o6um4")
+
+[node name="NameLabel" type="Label" parent="InventoryUI/Background/ExplainSheet" unique_id=735766836]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -50.0
+offset_right = 0.5
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_font_sizes/font_size = 120
+
+[node name="DescriptionLabel" type="Label" parent="InventoryUI/Background/ExplainSheet" unique_id=1089745881]
+custom_minimum_size = Vector2(450, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -560.0
+offset_right = 0.5
+offset_bottom = -260.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_font_sizes/font_size = 100
+autowrap_mode = 3
+
+[node name="Image" type="TextureRect" parent="InventoryUI/Background/ExplainSheet" unique_id=1995160120]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -330.0
+offset_right = 20.0
+offset_bottom = -290.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 1
+
+[node name="TrashButton" type="TextureButton" parent="InventoryUI/Background/ExplainSheet" unique_id=984421971]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.95
+anchor_top = 0.89
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -117.5
+offset_top = -7.7001953
+offset_right = -77.5
+offset_bottom = 32.299805
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(4, 4)
+texture_normal = SubResource("AtlasTexture_bbtsg")
+
+[node name="DeleteSheet_Single" type="NinePatchRect" parent="InventoryUI" unique_id=1386393979]
+visible = false
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 240.0
+offset_top = -300.0
+offset_right = 750.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_f4u5k")
+patch_margin_left = 17
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="Check" type="Label" parent="InventoryUI/DeleteSheet_Single" unique_id=1646851140]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 450.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_font_sizes/font_size = 80
+text = "정말 버리시겠습니까?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="OK" type="TextureButton" parent="InventoryUI/DeleteSheet_Single" unique_id=251927764]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 130.0
+offset_top = -150.0
+offset_right = 230.0
+offset_bottom = -50.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture_normal = SubResource("AtlasTexture_yjakb")
+
+[node name="Cancel" type="TextureButton" parent="InventoryUI/DeleteSheet_Single" unique_id=1837665912]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -210.0
+offset_top = -150.0
+offset_right = -110.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture_normal = SubResource("AtlasTexture_ohhls")
+
+[node name="DeleteSheet_Multiple" type="NinePatchRect" parent="InventoryUI" unique_id=718159504]
+visible = false
+custom_minimum_size = Vector2(300, 600)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 240.0
+offset_top = -300.0
+offset_right = 750.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_f4u5k")
+patch_margin_left = 17
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="OK" type="TextureButton" parent="InventoryUI/DeleteSheet_Multiple" unique_id=595617098]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 130.0
+offset_top = -150.0
+offset_right = 230.0
+offset_bottom = -50.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture_normal = SubResource("AtlasTexture_67xb0")
+
+[node name="Cancel" type="TextureButton" parent="InventoryUI/DeleteSheet_Multiple" unique_id=504553958]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -210.0
+offset_top = -150.0
+offset_right = -110.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture_normal = SubResource("AtlasTexture_ohhls")
+
+[node name="Number" type="Label" parent="InventoryUI/DeleteSheet_Multiple" unique_id=686932841]
+custom_minimum_size = Vector2(430, 50)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_right = 200.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_font_sizes/font_size = 80
+text = "버릴 개수를 입력하세요."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="InputNumber" type="LineEdit" parent="InventoryUI/DeleteSheet_Multiple" unique_id=2009452283]
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -100.0
+offset_right = 55.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_font_sizes/font_size = 60
+text = "1"
+alignment = 1
+virtual_keyboard_type = 2
+script = ExtResource("5_bbtsg")
+
+[node name="NumberingButton" type="HBoxContainer" parent="InventoryUI/DeleteSheet_Multiple" unique_id=1245272922]
+custom_minimum_size = Vector2(300, 30)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_top = 0.6
+anchor_right = 0.7
+anchor_bottom = 0.6
+offset_left = -286.0
+offset_top = -45.0
+offset_right = 133.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="min" type="Button" parent="InventoryUI/DeleteSheet_Multiple/NumberingButton" unique_id=1528066650]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_bo4r5")
+text = "min"
+
+[node name="ten_min" type="Button" parent="InventoryUI/DeleteSheet_Multiple/NumberingButton" unique_id=1623395497]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_c46v5")
+text = "-10"
+
+[node name="one_min" type="Button" parent="InventoryUI/DeleteSheet_Multiple/NumberingButton" unique_id=1681519182]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_irxrv")
+text = "-1"
+
+[node name="one_plus" type="Button" parent="InventoryUI/DeleteSheet_Multiple/NumberingButton" unique_id=1982787440]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_568vy")
+text = "+1"
+
+[node name="ten_plus" type="Button" parent="InventoryUI/DeleteSheet_Multiple/NumberingButton" unique_id=1987835074]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_ebnwy")
+text = "+10"
+
+[node name="max" type="Button" parent="InventoryUI/DeleteSheet_Multiple/NumberingButton" unique_id=105766403]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_ybipx")
+text = "max"
+
+[connection signal="pressed" from="InventoryButton" to="." method="_on_inventory_button_pressed"]
+[connection signal="pressed" from="InventoryUI/Background/CloseButton" to="InventoryUI" method="_on_close_button_pressed"]
+[connection signal="pressed" from="InventoryUI/Background/ExplainSheet/TrashButton" to="InventoryUI" method="_on_trash_button_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Single/OK" to="InventoryUI" method="_on_ok_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Single/Cancel" to="InventoryUI" method="_on_cancel_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/OK" to="InventoryUI" method="_on_ok_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/Cancel" to="InventoryUI" method="_on_cancel_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/NumberingButton/min" to="InventoryUI/DeleteSheet_Multiple/InputNumber" method="_on_min_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/NumberingButton/ten_min" to="InventoryUI/DeleteSheet_Multiple/InputNumber" method="_on_ten_min_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/NumberingButton/one_min" to="InventoryUI/DeleteSheet_Multiple/InputNumber" method="_on_one_min_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/NumberingButton/one_plus" to="InventoryUI/DeleteSheet_Multiple/InputNumber" method="_on_one_plus_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/NumberingButton/ten_plus" to="InventoryUI/DeleteSheet_Multiple/InputNumber" method="_on_ten_plus_pressed"]
+[connection signal="pressed" from="InventoryUI/DeleteSheet_Multiple/NumberingButton/max" to="InventoryUI/DeleteSheet_Multiple/InputNumber" method="_on_max_pressed"]
