@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bag10csa7uqa"]
+
+[ext_resource type="Script" uid="uid://d3862r8mcxi3s" path="res://summon_slot.gd" id="1_tgcjv"]
+[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_kjrfi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjrfi"]
+atlas = ExtResource("2_kjrfi")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqpm5"]
+atlas = SubResource("AtlasTexture_kjrfi")
+region = Rect2(748, 14, 10, 8)
+
+[node name="SummonSlot" type="Control" unique_id=1244937285]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_tgcjv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1560653477]
+
+[node name="Button" type="TextureButton" parent="." unique_id=2061637977]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SelectFrame" type="NinePatchRect" parent="." unique_id=341994007]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -10.0
+offset_right = 10.0
+offset_bottom = 20.0
+grow_horizontal = 2
+scale = Vector2(1.5, 1.5)
+texture = SubResource("AtlasTexture_yqpm5")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="." unique_id=89320836]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_behavior_recursive = 1
+border_color = Color(0.5, 0.42666668, 0.4, 1)
+border_width = 10.0
+editor_only = false

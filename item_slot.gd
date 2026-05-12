@@ -3,6 +3,7 @@ extends Control
 @onready var icon = $Icon
 @onready var slot_bg = $slot
 @onready var selection_rect = $Selection
+@onready var cnt = $Count
 
 var item_data = {}
 
@@ -17,13 +18,18 @@ func set_item(item: Dictionary = {}):
 	item_data = item
 	icon.texture = item["icon"]
 	icon.visible = true
+	cnt.text = str(item["count"])
+	cnt.visible = true
 
 func clear_slot():
-	item_data = null
-	icon.texture = null
-	icon.visible = false
-	set_selected(false)
+	item_data = null # DB 초기화
+	icon.texture = null # 이미지 초기화
+	icon.visible = false 
+	cnt.text = "" # 개수 초기화
+	cnt.visible = false
+	set_selected(false) # 슬롯 선택상태 클리어
 
+# 슬롯 선택상태
 func set_selected(is_selected: bool):
 	selection_rect.visible = is_selected
 

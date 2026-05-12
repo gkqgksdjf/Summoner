@@ -8,23 +8,34 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="summoner"
 run/main_scene="uid://drdokr7nbowoj"
-config/features=PackedStringArray("4.5", "Mobile")
+config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-SceneManager="*res://SceneManager.gd"
-InventoryData="*res://inventory_data.gd"
+SceneManager="*uid://dpww8o5y7245b"
+InventoryData="*uid://c108v7xi8jpjj"
+InventoryManager="*uid://cjhrpolvcg4v0"
+Ui="*uid://cse6srnqwlsqv"
+SummonData="*uid://ds8cco416oiu3"
+SummonManager="*uid://5e8sx6ghp6sw"
+SpriteUtil="*uid://c0arj12om82jh"
+NatureData="*uid://c1ujcvmrvqrhd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [rendering]
 

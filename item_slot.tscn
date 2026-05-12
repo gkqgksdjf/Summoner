@@ -1,54 +1,70 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfihp0gbl740y"]
+[gd_scene format=3 uid="uid://bfihp0gbl740y"]
 
 [ext_resource type="Script" uid="uid://buncd5e62pucu" path="res://item_slot.gd" id="1_n6cxc"]
 [ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_0myub"]
+[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="3_i83bl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i83bl"]
 atlas = ExtResource("2_0myub")
 region = Rect2(26, 122, 44, 44)
 
-[node name="ItemSlot" type="Control"]
+[node name="ItemSlot" type="Control" unique_id=2040591800]
 z_index = 1
-custom_minimum_size = Vector2(160, 160)
+custom_minimum_size = Vector2(135, 135)
 layout_mode = 3
 anchors_preset = 0
 offset_left = 30.0
 offset_top = 30.0
-offset_right = 190.0
-offset_bottom = 190.0
-mouse_filter = 1
+offset_right = 125.0
+offset_bottom = 125.0
 script = ExtResource("1_n6cxc")
 
-[node name="slot" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(160, 160)
+[node name="slot" type="TextureRect" parent="." unique_id=36135335]
+custom_minimum_size = Vector2(135, 135)
 layout_mode = 0
 offset_left = 30.0
 offset_top = 30.0
-offset_right = 190.0
-offset_bottom = 190.0
+offset_right = 110.0
+offset_bottom = 110.0
 mouse_filter = 2
 texture = SubResource("AtlasTexture_i83bl")
 stretch_mode = 5
 
-[node name="Icon" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(160, 160)
+[node name="Icon" type="TextureRect" parent="." unique_id=702063272]
+custom_minimum_size = Vector2(105, 105)
 layout_mode = 0
-offset_left = 30.0
-offset_top = 30.0
-offset_right = 190.0
-offset_bottom = 190.0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 145.0
+offset_bottom = 145.0
 mouse_filter = 2
 texture = SubResource("AtlasTexture_i83bl")
 stretch_mode = 5
 
-[node name="Selection" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(160, 160)
+[node name="Selection" type="ColorRect" parent="." unique_id=1324987675]
+custom_minimum_size = Vector2(135, 135)
 layout_mode = 0
 offset_left = 30.0
 offset_top = 30.0
-offset_right = 190.0
-offset_bottom = 190.0
+offset_right = 110.0
+offset_bottom = 110.0
 mouse_filter = 2
 color = Color(1, 0.77254903, 0.44705883, 0.39607844)
+
+[node name="Count" type="Label" parent="." unique_id=1616350323]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.18
+anchor_top = 1.15
+anchor_right = 1.2
+anchor_bottom = 1.15
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("3_i83bl")
+theme_override_font_sizes/font_size = 80
+autowrap_mode = 3
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

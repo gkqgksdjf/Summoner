@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cse6srnqwlsqv"]
+
+[ext_resource type="Script" uid="uid://bb6pq11gqw2h0" path="res://ui.gd" id="1_nltto"]
+[ext_resource type="PackedScene" uid="uid://ddo47f38ulwyw" path="res://addons/joystick_addon/joystick.tscn" id="2_ibotj"]
+[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="3_n5ude"]
+[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="4_y4yjw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnost"]
+atlas = ExtResource("3_n5ude")
+region = Rect2(16, 16, 64, 62)
+
+[node name="UI" type="CanvasLayer" unique_id=543786819]
+script = ExtResource("1_nltto")
+
+[node name="Joystick" parent="." unique_id=953733546 instance=ExtResource("2_ibotj")]
+
+[node name="Toast" type="Control" parent="." unique_id=76597421]
+layout_mode = 3
+anchors_preset = 0
+pivot_offset = Vector2(-100, 0)
+mouse_filter = 2
+
+[node name="ToastIcon" type="NinePatchRect" parent="Toast" unique_id=1266443208]
+custom_minimum_size = Vector2(120, 100)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1760.0
+offset_top = 470.0
+offset_right = 1880.0
+offset_bottom = 570.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_qnost")
+region_rect = Rect2(1, 0, 0, 0)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Toast/ToastIcon" unique_id=1617405520]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -40.0
+offset_right = 85.0
+offset_bottom = 40.0
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Toast/ToastIcon/MarginContainer" unique_id=1623138361]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="ToastItem" type="TextureRect" parent="Toast/ToastIcon/MarginContainer/HBoxContainer" unique_id=1927220053]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+stretch_mode = 5
+
+[node name="ToastLabel" type="Label" parent="Toast/ToastIcon/MarginContainer/HBoxContainer" unique_id=1185806113]
+z_index = 1
+custom_minimum_size = Vector2(10, 80)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_y4yjw")
+theme_override_font_sizes/font_size = 80

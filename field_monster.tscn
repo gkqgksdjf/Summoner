@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bfbmooony47mk"]
+
+[ext_resource type="Script" uid="uid://271ub7eqpg7d" path="res://Scripts/Monster/field_monster.gd" id="1_fhp6l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fhp6l"]
+
+[node name="FieldMonster" type="CharacterBody2D" unique_id=479075440]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_fhp6l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=632571735]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1616617217]
+light_mask = 4
+visibility_layer = 7
+shape = SubResource("CircleShape2D_fhp6l")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=2123811715]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=542271840]

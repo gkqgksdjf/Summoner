@@ -1,15 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://b73i61vil7e07"]
+[gd_scene format=3 uid="uid://b73i61vil7e07"]
 
 [ext_resource type="Script" uid="uid://bgtg18r7qa30v" path="res://item_field.gd" id="1_26hkx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_poqrq"]
 
-[node name="ItemField" type="Area2D"]
+[node name="ItemField" type="Area2D" unique_id=67120156]
 script = ExtResource("1_26hkx")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1047792105]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=98522249]
 shape = SubResource("CapsuleShape2D_poqrq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
