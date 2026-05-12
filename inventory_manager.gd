@@ -16,3 +16,7 @@ func _on_child_inventory_toggled(is_open: bool):
 
 func _on_inventory_button_pressed() -> void:
 	inventory_ui.toggle()
+
+
+func _on_scroll_button_1_pressed() -> void:
+	pass # Replace with function body.
