@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ehdhgx0wxn4a" path="res://inventory_ui.gd" id="1_jn3b8"]
 [ext_resource type="Script" uid="uid://cm78jauvuadd0" path="res://inventory_manager.gd" id="1_to27r"]
 [ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_5bopx"]
+[ext_resource type="Texture2D" uid="uid://dlm0hej221bhu" path="res://UI/1779030067404.png" id="2_5mmst"]
 [ext_resource type="Script" uid="uid://cu2fypbp1gf2j" path="res://explain_sheet.gd" id="3_o6um4"]
 [ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="4_m5yu5"]
 [ext_resource type="Script" uid="uid://7oxinnbowb8s" path="res://input_number.gd" id="5_bbtsg"]
@@ -14,9 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://b251b65fgx2gn" path="res://Resources/file_0000000083b87206a1dea971e35901b4.png" id="9_bp180"]
 [ext_resource type="Texture2D" uid="uid://bqnf7g4nikug7" path="res://Resources/other_icons.png" id="9_v0pqq"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jn3b8"]
-atlas = ExtResource("2_5bopx")
-region = Rect2(401.7671, 204.54044, 36.819916, 35.54593)
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmt4w"]
+atlas = ExtResource("2_5mmst")
+region = Rect2(1128, 383, 60, 56)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5bopx"]
 atlas = ExtResource("2_5bopx")
@@ -296,12 +297,12 @@ script = ExtResource("1_to27r")
 
 [node name="InventoryButton" type="TextureButton" parent="." unique_id=1520947097]
 z_index = 1
-custom_minimum_size = Vector2(36, 35)
+custom_minimum_size = Vector2(48, 48)
 anchors_preset = -1
 anchor_left = 1.0
-anchor_top = 0.6
+anchor_top = 0.39
 anchor_right = 1.0
-anchor_bottom = 0.6
+anchor_bottom = 0.39
 offset_left = -120.0
 offset_top = -27.5
 offset_right = -84.0
@@ -310,7 +311,9 @@ grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(2, 2)
 pivot_offset = Vector2(0, 0.332)
-texture_normal = SubResource("AtlasTexture_jn3b8")
+texture_normal = SubResource("AtlasTexture_dmt4w")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="InventoryUI" type="Control" parent="." unique_id=1559020058]
 z_index = 1

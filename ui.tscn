@@ -4,10 +4,142 @@
 [ext_resource type="PackedScene" uid="uid://ddo47f38ulwyw" path="res://addons/joystick_addon/joystick.tscn" id="2_ibotj"]
 [ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="3_n5ude"]
 [ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="4_y4yjw"]
+[ext_resource type="Texture2D" uid="uid://0ld1m8rki8pn" path="res://UI/Gemini/InteractionBtt.png" id="5_y4yjw"]
+[ext_resource type="Texture2D" uid="uid://cafl0l6mc6gvl" path="res://UI/PNG/Action_panel.png" id="6_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://bf35gluatbvhi" path="res://UI/Target_slot_fixed.png" id="6_irxef"]
+[ext_resource type="Texture2D" uid="uid://chsmnmbk1fwep" path="res://UI/Tactics_buttons2.png" id="6_ok7cu"]
+[ext_resource type="Texture2D" uid="uid://bra3h8sxd13k4" path="res://UI/Tactics_buttons1.png" id="7_irxef"]
+[ext_resource type="Texture2D" uid="uid://dlm0hej221bhu" path="res://UI/1779030067404.png" id="8_irxef"]
+[ext_resource type="PackedScene" uid="uid://dodbnfovib06n" path="res://damage_text.tscn" id="11_e2l4f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnost"]
 atlas = ExtResource("3_n5ude")
 region = Rect2(16, 16, 64, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5ude"]
+atlas = ExtResource("5_y4yjw")
+region = Rect2(53, 24, 345, 317)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibotj"]
+atlas = ExtResource("5_y4yjw")
+region = Rect2(571, 24, 346, 317)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2v2c"]
+atlas = ExtResource("8_irxef")
+region = Rect2(34, 196, 154, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqeas"]
+atlas = ExtResource("8_irxef")
+region = Rect2(34, 283, 154, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvlql"]
+atlas = ExtResource("3_n5ude")
+region = Rect2(24, 502, 48, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4oxx"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(548, 544, 239, 233)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_waa4j"]
+atlas = ExtResource("7_irxef")
+region = Rect2(15, 13, 237, 229)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok7cu"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(14, 10, 240, 234)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irxef"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(283, 13, 242, 236)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2l4f"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(548, 10, 239, 234)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5rqp"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(14, 277, 242, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gs482"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(276, 284, 243, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxd00"]
+atlas = ExtResource("6_ok7cu")
+region = Rect2(543, 284, 243, 234)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ydj3"]
+atlas = ExtResource("8_irxef")
+region = Rect2(34, 283, 154, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etlur"]
+atlas = ExtResource("6_irxef")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rqds"]
+atlas = ExtResource("8_irxef")
+region = Rect2(1304, 453, 58, 59)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvb2n"]
+atlas = ExtResource("8_irxef")
+region = Rect2(1397, 463, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2s2p"]
+atlas = ExtResource("3_n5ude")
+region = Rect2(200, 8, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7w61g"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(128, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccnxy"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(128, 64, 16, 16)
+margin = Rect2(1, 1, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2460"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(144, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_os5c7"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(144, 64, 16, 16)
+margin = Rect2(1, 1, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxnlh"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(160, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2p7n"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(160, 64, 16, 16)
+margin = Rect2(1, 1, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w05v2"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(176, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkygq"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(176, 64, 16, 16)
+margin = Rect2(1, 1, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v463t"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(176, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sosvr"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(176, 80, 16, 16)
+margin = Rect2(1, 1, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2u0ql"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(160, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndy3v"]
+atlas = ExtResource("6_e2l4f")
+region = Rect2(160, 80, 16, 16)
+margin = Rect2(1, 1, 1, 1)
 
 [node name="UI" type="CanvasLayer" unique_id=543786819]
 script = ExtResource("1_nltto")
@@ -16,23 +148,23 @@ script = ExtResource("1_nltto")
 
 [node name="Toast" type="Control" parent="." unique_id=76597421]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 pivot_offset = Vector2(-100, 0)
 mouse_filter = 2
 
 [node name="ToastIcon" type="NinePatchRect" parent="Toast" unique_id=1266443208]
 custom_minimum_size = Vector2(120, 100)
 layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 1760.0
-offset_top = 470.0
-offset_right = 1880.0
-offset_bottom = 570.0
-grow_horizontal = 0
+offset_top = -50.0
+offset_right = 120.0
+offset_bottom = 50.0
 grow_vertical = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -78,3 +210,648 @@ size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
 theme_override_fonts/font = ExtResource("4_y4yjw")
 theme_override_font_sizes/font_size = 80
+
+[node name="InteractionButton" type="TextureButton" parent="." unique_id=1179932020]
+custom_minimum_size = Vector2(250, 250)
+anchors_preset = -1
+anchor_left = 0.95
+anchor_top = 0.95
+anchor_right = 0.95
+anchor_bottom = 0.95
+offset_left = -250.0
+offset_top = -250.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_n5ude")
+texture_pressed = SubResource("AtlasTexture_ibotj")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="StrategySlot" type="Control" parent="." unique_id=793256861]
+custom_minimum_size = Vector2(230, 250)
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -115.0
+offset_top = -250.0
+offset_right = 115.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="StrategyOpenBtn" type="TextureButton" parent="StrategySlot" unique_id=1605990755]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -58.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_i2v2c")
+texture_pressed = SubResource("AtlasTexture_gqeas")
+
+[node name="Label" type="Label" parent="StrategySlot/StrategyOpenBtn" unique_id=1301319627]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_top = -10.0
+offset_right = 43.5
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_y4yjw")
+theme_override_font_sizes/font_size = 60
+text = "STRATEGY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Box" type="NinePatchRect" parent="StrategySlot" unique_id=1773613348]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_qvlql")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="StrategyButtons" type="GridContainer" parent="StrategySlot/Box" unique_id=304281542]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.5
+offset_top = -102.5
+offset_right = 102.5
+offset_bottom = 102.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 2
+
+[node name="BtnStrategy1" type="TextureButton" parent="StrategySlot/Box/StrategyButtons" unique_id=926875333]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_r4oxx")
+texture_pressed = SubResource("AtlasTexture_waa4j")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BtnStrategy2" type="TextureButton" parent="StrategySlot/Box/StrategyButtons" unique_id=2057945790]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_ok7cu")
+texture_pressed = SubResource("AtlasTexture_irxef")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BtnStrategy3" type="TextureButton" parent="StrategySlot/Box/StrategyButtons" unique_id=798465807]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_e2l4f")
+texture_pressed = SubResource("AtlasTexture_n5rqp")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BtnStrategy4" type="TextureButton" parent="StrategySlot/Box/StrategyButtons" unique_id=1496210011]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_gs482")
+texture_pressed = SubResource("AtlasTexture_cxd00")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="StrategyCloseBtn" type="TextureButton" parent="StrategySlot/Box" unique_id=910789274]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -77.0
+offset_top = -40.0
+offset_right = 77.0
+offset_bottom = 58.0
+grow_horizontal = 2
+texture_normal = SubResource("AtlasTexture_i2v2c")
+texture_pressed = SubResource("AtlasTexture_2ydj3")
+
+[node name="Label" type="Label" parent="StrategySlot/Box/StrategyCloseBtn" unique_id=1172940707]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_top = -10.0
+offset_right = 43.5
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_y4yjw")
+theme_override_font_sizes/font_size = 60
+text = "STRATEGY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TargetSlot" type="TextureRect" parent="." unique_id=355191714]
+custom_minimum_size = Vector2(500, 100)
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.6
+anchor_right = 1.0
+anchor_bottom = 0.6
+offset_left = -500.0
+offset_top = -230.0
+offset_bottom = 250.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("AtlasTexture_etlur")
+expand_mode = 1
+
+[node name="TargetButtons" type="HBoxContainer" parent="TargetSlot" unique_id=1922604248]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.4
+anchor_right = 1.0
+anchor_bottom = 0.6
+offset_left = 30.0
+offset_top = -2.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="TargetBtn1" type="TextureButton" parent="TargetSlot/TargetButtons" unique_id=1805377505]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_7rqds")
+texture_pressed = SubResource("AtlasTexture_nvb2n")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SelectBorder" type="Control" parent="TargetSlot/TargetButtons/TargetBtn1" unique_id=1561698208]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Boarder1" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn1/SelectBorder" unique_id=1189889736]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+offset_right = 14.0
+offset_bottom = 14.0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+
+[node name="Boarder2" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn1/SelectBorder" unique_id=1694830672]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_right = 0.77
+offset_left = -14.0
+offset_bottom = 14.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+
+[node name="Boarder4" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn1/SelectBorder" unique_id=250312318]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.7
+anchor_bottom = 0.7
+offset_top = -14.0
+offset_right = 14.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_v = true
+
+[node name="Boarder5" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn1/SelectBorder" unique_id=1506617674]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.7
+anchor_right = 0.77
+anchor_bottom = 0.7
+offset_left = -14.0
+offset_top = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+flip_v = true
+
+[node name="TargetBtn2" type="TextureButton" parent="TargetSlot/TargetButtons" unique_id=802649221]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_7rqds")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SelectBorder" type="Control" parent="TargetSlot/TargetButtons/TargetBtn2" unique_id=1004701138]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Boarder1" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn2/SelectBorder" unique_id=963873282]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+offset_right = 14.0
+offset_bottom = 14.0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+
+[node name="Boarder2" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn2/SelectBorder" unique_id=1398749002]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_right = 0.77
+offset_left = -14.0
+offset_bottom = 14.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+
+[node name="Boarder4" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn2/SelectBorder" unique_id=2127456007]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.7
+anchor_bottom = 0.7
+offset_top = -14.0
+offset_right = 14.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_v = true
+
+[node name="Boarder5" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn2/SelectBorder" unique_id=2060550362]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.7
+anchor_right = 0.77
+anchor_bottom = 0.7
+offset_left = -14.0
+offset_top = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+flip_v = true
+
+[node name="TargetBtn3" type="TextureButton" parent="TargetSlot/TargetButtons" unique_id=2143748008]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_7rqds")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SelectBorder" type="Control" parent="TargetSlot/TargetButtons/TargetBtn3" unique_id=419244526]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Boarder1" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn3/SelectBorder" unique_id=1448284144]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+offset_right = 14.0
+offset_bottom = 14.0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+
+[node name="Boarder2" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn3/SelectBorder" unique_id=693344435]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_right = 0.77
+offset_left = -14.0
+offset_bottom = 14.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+
+[node name="Boarder4" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn3/SelectBorder" unique_id=2006809573]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.7
+anchor_bottom = 0.7
+offset_top = -14.0
+offset_right = 14.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_v = true
+
+[node name="Boarder5" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn3/SelectBorder" unique_id=720127455]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.7
+anchor_right = 0.77
+anchor_bottom = 0.7
+offset_left = -14.0
+offset_top = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+flip_v = true
+
+[node name="TargetBtn4" type="TextureButton" parent="TargetSlot/TargetButtons" unique_id=1061311141]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_7rqds")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SelectBorder" type="Control" parent="TargetSlot/TargetButtons/TargetBtn4" unique_id=1405848441]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Boarder1" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn4/SelectBorder" unique_id=554730024]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+offset_right = 14.0
+offset_bottom = 14.0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+
+[node name="Boarder2" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn4/SelectBorder" unique_id=2058745157]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_right = 0.77
+offset_left = -14.0
+offset_bottom = 14.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+
+[node name="Boarder4" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn4/SelectBorder" unique_id=649921294]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.7
+anchor_bottom = 0.7
+offset_top = -14.0
+offset_right = 14.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_v = true
+
+[node name="Boarder5" type="TextureRect" parent="TargetSlot/TargetButtons/TargetBtn4/SelectBorder" unique_id=253946229]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.7
+anchor_right = 0.77
+anchor_bottom = 0.7
+offset_left = -14.0
+offset_top = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_x2s2p")
+stretch_mode = 2
+flip_h = true
+flip_v = true
+
+[node name="SkillSlot" type="Control" parent="." unique_id=218778033]
+custom_minimum_size = Vector2(230, 250)
+layout_mode = 3
+anchor_left = 0.63
+anchor_top = 0.95
+anchor_right = 0.73
+anchor_bottom = 1.0
+offset_left = -115.0
+offset_top = -250.0
+offset_right = 115.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SkillOpenBtn" type="TextureButton" parent="SkillSlot" unique_id=1086322568]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -58.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_i2v2c")
+texture_pressed = SubResource("AtlasTexture_gqeas")
+
+[node name="Label" type="Label" parent="SkillSlot/SkillOpenBtn" unique_id=775381940]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_top = -10.0
+offset_right = 43.5
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_y4yjw")
+theme_override_font_sizes/font_size = 60
+text = "Summon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Box" type="NinePatchRect" parent="SkillSlot" unique_id=1649455183]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_qvlql")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="SkillCloseBtn" type="TextureButton" parent="SkillSlot/Box" unique_id=1412989619]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -77.0
+offset_top = -40.0
+offset_right = 77.0
+offset_bottom = 58.0
+grow_horizontal = 2
+texture_normal = SubResource("AtlasTexture_i2v2c")
+texture_pressed = SubResource("AtlasTexture_2ydj3")
+
+[node name="Label" type="Label" parent="SkillSlot/Box/SkillCloseBtn" unique_id=881041588]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -43.5
+offset_top = -10.0
+offset_right = 43.5
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("4_y4yjw")
+theme_override_font_sizes/font_size = 60
+text = "Summon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SkillButtons" type="GridContainer" parent="SkillSlot/Box" unique_id=525702700]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.98
+anchor_top = 0.51
+anchor_right = 0.98
+anchor_bottom = 0.51
+offset_left = -170.0
+offset_top = -130.0
+offset_bottom = 130.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="BtnSkill1" type="TextureButton" parent="SkillSlot/Box/SkillButtons" unique_id=831314711]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_7w61g")
+texture_pressed = SubResource("AtlasTexture_ccnxy")
+stretch_mode = 5
+
+[node name="BtnSkill2" type="TextureButton" parent="SkillSlot/Box/SkillButtons" unique_id=1968194859]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_r2460")
+texture_pressed = SubResource("AtlasTexture_os5c7")
+stretch_mode = 5
+
+[node name="BtnSkill3" type="TextureButton" parent="SkillSlot/Box/SkillButtons" unique_id=133285547]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_gxnlh")
+texture_pressed = SubResource("AtlasTexture_b2p7n")
+stretch_mode = 5
+
+[node name="BtnSkill4" type="TextureButton" parent="SkillSlot/Box/SkillButtons" unique_id=1623461182]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_w05v2")
+texture_pressed = SubResource("AtlasTexture_vkygq")
+stretch_mode = 5
+
+[node name="BtnSkill5" type="TextureButton" parent="SkillSlot/Box/SkillButtons" unique_id=1712080719]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_v463t")
+texture_pressed = SubResource("AtlasTexture_sosvr")
+stretch_mode = 5
+
+[node name="BtnSkill6" type="TextureButton" parent="SkillSlot/Box/SkillButtons" unique_id=570100490]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_2u0ql")
+texture_pressed = SubResource("AtlasTexture_ndy3v")
+stretch_mode = 5
+
+[node name="DamageText" parent="." unique_id=897533334 instance=ExtResource("11_e2l4f")]
+
+[connection signal="pressed" from="StrategySlot/StrategyOpenBtn" to="." method="_on_strategy_open_btn_pressed" binds= ["Strategy"]]
+[connection signal="pressed" from="StrategySlot/Box/StrategyCloseBtn" to="." method="_on_strategy_close_btn_pressed" binds= ["Strategy"]]
+[connection signal="pressed" from="TargetSlot/TargetButtons/TargetBtn1" to="." method="_on_target_btn_pressed" binds= [1]]
+[connection signal="pressed" from="TargetSlot/TargetButtons/TargetBtn2" to="." method="_on_target_btn_pressed" binds= [2]]
+[connection signal="pressed" from="TargetSlot/TargetButtons/TargetBtn3" to="." method="_on_target_btn_pressed" binds= [3]]
+[connection signal="pressed" from="TargetSlot/TargetButtons/TargetBtn4" to="." method="_on_target_btn_pressed" binds= [4]]
+[connection signal="pressed" from="SkillSlot/SkillOpenBtn" to="." method="_on_strategy_open_btn_pressed" binds= ["Skill"]]
+[connection signal="pressed" from="SkillSlot/Box/SkillCloseBtn" to="." method="_on_strategy_close_btn_pressed" binds= ["Skill"]]

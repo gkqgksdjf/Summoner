@@ -3,10 +3,17 @@ extends Node2D
 
 @onready var player = $"World/Player" # 플레이어 노드 경로
 @onready var spawns = $"World/Spawns" # Marker2D들이 모여있는 부모 노드
+@onready var bgm = $AudioStreamPlayer2D
 
 func _ready():
 	_place_player()
-
+	
+	# bgm controlvar t = create_tween()
+	var t = create_tween()
+	bgm.volume_db = -40
+	bgm.play()
+	t.tween_property(bgm, "volume_db", -10, 2.0)
+	
 func _place_player():
 	var tag = SceneManager.target_spawn_tag
 	

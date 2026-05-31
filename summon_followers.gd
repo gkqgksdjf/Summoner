@@ -46,3 +46,7 @@ func refresh_followers() -> void:
 		if old_uid not in valid_uids:
 			follower_nodes[old_uid].queue_free()
 			follower_nodes.erase(old_uid)
+
+func command_attack(target):
+	for follower in follower_nodes.values():
+		follower.set_combat_target(target)

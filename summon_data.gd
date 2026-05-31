@@ -17,7 +17,8 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_HP",
 		"tank_type": "hp",
-		"base_stats": {"str": 4.0, "agi": 3.0, "int": 2.0, "vit": 8.0}
+		"base_stats": {"str": 4.0, "agi": 3.0, "int": 2.0, "vit": 8.0},
+		"attack_range": 1.0
 	},
 	"bomb_slime": {
 		"name": "폭탄 슬라임",

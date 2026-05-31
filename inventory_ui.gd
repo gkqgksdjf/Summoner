@@ -32,6 +32,7 @@ func _ready():
 	visible = false
 	prepare_slots()
 	
+	# test
 	InventoryData.add_item("scroll_slime1", 100)
 
 func open():

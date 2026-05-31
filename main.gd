@@ -6,6 +6,8 @@ extends Node2D
 
 func _ready():
 	_place_player() # 플레이어 위치 셋팅
+	# test
+	SummonManager.make_summon_results(10, 1)
 
 func _place_player():
 	var tag = SceneManager.target_spawn_tag

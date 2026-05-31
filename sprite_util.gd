@@ -38,6 +38,9 @@ func apply_normalized_scale(
 		final_size *= 2.5
 	elif anim_name.find("코르엘") != -1:
 		final_size *= 0.4
+	elif anim_name.find("복스") != -1:
+		final_size *= 0.4
+
 	
 	var s: float = final_size / max_side
 	sprite.scale = Vector2(s, s)

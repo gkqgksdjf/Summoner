@@ -6638,6 +6638,8 @@ script = ExtResource("18_074og")
 [node name="SlimeArea" type="Node2D" parent="World/SpawnAreas" unique_id=1939432458]
 position = Vector2(-130, -250)
 script = ExtResource("19_82xsv")
+monster_id = "golem"
+monster_type = "aggressive"
 spawn_radius = 50.0
 monster_scene = ExtResource("19_cegan")
 monster_container_path = NodePath("../../MonsterContainer")
@@ -6645,7 +6647,16 @@ monster_container_path = NodePath("../../MonsterContainer")
 [node name="CorelArea" type="Node2D" parent="World/SpawnAreas" unique_id=811670332]
 position = Vector2(90, -150)
 script = ExtResource("19_82xsv")
+monster_type = "aggressive"
+spawn_radius = 50.0
+monster_scene = ExtResource("19_cegan")
+monster_container_path = NodePath("../../MonsterContainer")
+
+[node name="SlimeArea2" type="Node2D" parent="World/SpawnAreas" unique_id=689137287]
+position = Vector2(0, -200)
+script = ExtResource("19_82xsv")
 monster_id = "corel"
+spawn_count = 2
 spawn_radius = 50.0
 monster_scene = ExtResource("19_cegan")
 monster_container_path = NodePath("../../MonsterContainer")

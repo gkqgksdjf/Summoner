@@ -54,6 +54,7 @@ func create_creature(creature_id: String) -> Dictionary:
 		"role": base.get("role", "attacker"),
 		"growth_type": base.get("growth_type", "ATK_AS"),
 		"tank_type": base.get("tank_type", ""),
+		"attack_range": base.get("attack_range", 45.0),
 
 		"level": 1,
 		"exp": 0,

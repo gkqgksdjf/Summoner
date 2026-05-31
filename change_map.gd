@@ -9,4 +9,4 @@ func _on_body_entered(body: Node2D) -> void:
 			# 1. 어디로 나타날지 태그를 저장
 			SceneManager.target_spawn_tag = spawn_tag
 			# 2. 안전하게 씬 전환 (지난번 알려드린 call_deferred 적용)
-			get_tree().call_deferred("change_scene_to_file", target_scene_path)
+			SceneManager.change_scene(target_scene_path)

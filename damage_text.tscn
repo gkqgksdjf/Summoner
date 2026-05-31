@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dodbnfovib06n"]
+
+[ext_resource type="Script" uid="uid://bnjyw87mf083t" path="res://damage_text.gd" id="1_xx71h"]
+[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="2_iqooj"]
+
+[node name="DamageText" type="Node2D" unique_id=897533334]
+script = ExtResource("1_xx71h")
+
+[node name="Label" type="Label" parent="." unique_id=1665773772]
+offset_left = -10.0
+offset_top = 10.0
+offset_right = 30.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_iqooj")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
