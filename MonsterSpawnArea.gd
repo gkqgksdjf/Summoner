@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var monster_id := "slime"
+@export var monster_type := "passive"
 @export var spawn_count := 5
 @export var spawn_radius := 300.0
 @export var min_spawn_distance := 40.0
@@ -19,6 +20,7 @@ func spawn_monsters():
 		var data = SummonManager.create_creature(monster_id)
 		
 		container.add_child(monster)
+		monster.set_monster_type(monster_type)
 
 		# Spawn random position
 		var spawn_pos := global_position

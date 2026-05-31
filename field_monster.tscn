@@ -1,10 +1,27 @@
 [gd_scene format=3 uid="uid://bfbmooony47mk"]
 
 [ext_resource type="Script" uid="uid://271ub7eqpg7d" path="res://Scripts/Monster/field_monster.gd" id="1_fhp6l"]
+[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="2_1lb2m"]
+[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="3_0tvtj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fhp6l"]
 
-[node name="FieldMonster" type="CharacterBody2D" unique_id=479075440]
+[sub_resource type="CircleShape2D" id="CircleShape2D_1lb2m"]
+radius = 50.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tvtj"]
+atlas = ExtResource("3_0tvtj")
+region = Rect2(542, 202, 36, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0weik"]
+atlas = ExtResource("3_0tvtj")
+region = Rect2(672, 266, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0260i"]
+atlas = ExtResource("3_0tvtj")
+region = Rect2(672, 490, 34, 16)
+
+[node name="FieldMonster" type="CharacterBody2D" unique_id=479075440 groups=["monster"]]
 collision_layer = 2
 collision_mask = 7
 script = ExtResource("1_fhp6l")
@@ -19,3 +36,49 @@ shape = SubResource("CircleShape2D_fhp6l")
 [node name="DetectionArea" type="Area2D" parent="." unique_id=2123811715]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=542271840]
+shape = SubResource("CircleShape2D_1lb2m")
+
+[node name="TargetUI" type="Control" parent="." unique_id=866382836]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 120.0
+offset_bottom = 40.0
+
+[node name="Background" type="NinePatchRect" parent="TargetUI" unique_id=775488773]
+layout_mode = 1
+offset_right = 16.0
+offset_bottom = 16.0
+texture = SubResource("AtlasTexture_0tvtj")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="TargetLabel" type="Label" parent="TargetUI" unique_id=1419479034]
+layout_mode = 1
+offset_right = 120.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0.015686275, 0.011764706, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("2_1lb2m")
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HPBar" type="TextureProgressBar" parent="." unique_id=1670626679]
+custom_minimum_size = Vector2(30, 8)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -13.0
+offset_top = 15.0
+offset_right = 21.0
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.8, 0.5)
+texture_under = SubResource("AtlasTexture_0weik")
+texture_progress = SubResource("AtlasTexture_0260i")
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
