@@ -213,7 +213,8 @@ func attack_target():
 		return
 
 	print(creature.name, " 공격")
-	combat_target.take_damage(10.0)
+	var atk = battle_stats.get("atk", 10.0)
+	combat_target.take_damage(atk)
 	
 func set_combat_target(target):
 	combat_target = target

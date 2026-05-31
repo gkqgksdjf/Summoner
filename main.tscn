@@ -1,152 +1,152 @@
 [gd_scene format=4 uid="uid://drdokr7nbowoj"]
 
-[ext_resource type="Script" uid="uid://5clt1mj8o0h2" path="res://Scripts/player.gd" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://c57f87mlw7o76" path="res://main.gd" id="1_2cqfq"]
-[ext_resource type="Texture2D" uid="uid://cexyojcyfuph4" path="res://Background/Basic/Herbalist_Idle.png" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://dr3byg3egqlna" path="res://Background/Basic/Herbalist_Walk.png" id="2_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://bulcchnsm0ycd" path="res://Background/Basic/Ground_grass.png" id="4_lquwl"]
-[ext_resource type="Texture2D" uid="uid://ctnq61k1yq3fe" path="res://Background/Basic/water_detilazation.png" id="5_5vw27"]
-[ext_resource type="Texture2D" uid="uid://boxioa0huxmg3" path="res://Background/Basic/Water_coasts.png" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://dreg5sg14qlp4" path="res://Background/Basic/Exterior_house.png" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://iymccrem7r2v" path="res://Background/Basic/spots.png" id="7_ycdy4"]
-[ext_resource type="Script" uid="uid://pivr16xsdtc6" path="res://Scripts/boiler.gd" id="8_4c57u"]
-[ext_resource type="Texture2D" uid="uid://qm267ob5ymk" path="res://Background/Basic/Trees_rocks.png" id="8_efxa6"]
-[ext_resource type="Texture2D" uid="uid://bfcguryd6ssl7" path="res://Background/Basic/Boiler.png" id="8_kek77"]
-[ext_resource type="Texture2D" uid="uid://f2qc0qvqrpnl" path="res://Background/Basic/Flowers.png" id="9_dg77c"]
-[ext_resource type="Texture2D" uid="uid://hpga5wr6gnvr" path="res://Objects/Glade_object.png" id="10_yaehf"]
-[ext_resource type="Texture2D" uid="uid://obg32qdxykmq" path="res://Background/Basic/water_lilis_animation.png" id="11_w48qg"]
-[ext_resource type="Script" uid="uid://beddmgwomygk" path="res://Scripts/change_map.gd" id="14_vivmo"]
-[ext_resource type="PackedScene" uid="uid://b73i61vil7e07" path="res://item_field.tscn" id="17_getpj"]
-[ext_resource type="Script" uid="uid://d234ead1aalax" path="res://summon_followers.gd" id="18_074og"]
-[ext_resource type="Script" uid="uid://cc4np4qoitxfa" path="res://Scripts/Monster/MonsterSpawnArea.gd" id="19_82xsv"]
-[ext_resource type="PackedScene" uid="uid://bfbmooony47mk" path="res://Scripts/Monster/field_monster.tscn" id="19_cegan"]
+[ext_resource type="Script" uid="uid://c57f87mlw7o76" path="res://Scripts/Map/main.gd" id="1_0mrai"]
+[ext_resource type="Script" uid="uid://5clt1mj8o0h2" path="res://Scripts/Object/player.gd" id="2_2bdck"]
+[ext_resource type="Texture2D" uid="uid://cexyojcyfuph4" path="res://Background/Basic/Herbalist_Idle.png" id="3_7h3a5"]
+[ext_resource type="Texture2D" uid="uid://dr3byg3egqlna" path="res://Background/Basic/Herbalist_Walk.png" id="4_2vyqs"]
+[ext_resource type="Texture2D" uid="uid://bulcchnsm0ycd" path="res://Background/Basic/Ground_grass.png" id="5_f3pdi"]
+[ext_resource type="Texture2D" uid="uid://ctnq61k1yq3fe" path="res://Background/Basic/water_detilazation.png" id="6_4cfhi"]
+[ext_resource type="Texture2D" uid="uid://boxioa0huxmg3" path="res://Background/Basic/Water_coasts.png" id="7_t1qkg"]
+[ext_resource type="Texture2D" uid="uid://iymccrem7r2v" path="res://Background/Basic/spots.png" id="8_yiohk"]
+[ext_resource type="Texture2D" uid="uid://dreg5sg14qlp4" path="res://Background/Basic/Exterior_house.png" id="9_fr7jp"]
+[ext_resource type="Texture2D" uid="uid://hpga5wr6gnvr" path="res://Objects/Glade_object.png" id="10_u7kye"]
+[ext_resource type="Texture2D" uid="uid://qm267ob5ymk" path="res://Background/Basic/Trees_rocks.png" id="11_prsup"]
+[ext_resource type="Texture2D" uid="uid://f2qc0qvqrpnl" path="res://Background/Basic/Flowers.png" id="12_y2t6j"]
+[ext_resource type="Texture2D" uid="uid://obg32qdxykmq" path="res://Background/Basic/water_lilis_animation.png" id="13_j3tya"]
+[ext_resource type="Script" uid="uid://pivr16xsdtc6" path="res://Scripts/Object/boiler.gd" id="14_n76uu"]
+[ext_resource type="Texture2D" uid="uid://bfcguryd6ssl7" path="res://Background/Basic/Boiler.png" id="15_u4vhs"]
+[ext_resource type="Script" uid="uid://beddmgwomygk" path="res://Scripts/Map/change_map.gd" id="16_mrhmb"]
+[ext_resource type="PackedScene" uid="uid://b73i61vil7e07" path="res://Scripts/UI/item_field.tscn" id="17_3q5sw"]
+[ext_resource type="Script" uid="uid://d234ead1aalax" path="res://Scripts/Summon/summon_followers.gd" id="18_fmkow"]
+[ext_resource type="Script" uid="uid://cc4np4qoitxfa" path="res://Scripts/Monster/MonsterSpawnArea.gd" id="19_rijul"]
+[ext_resource type="PackedScene" uid="uid://bfbmooony47mk" path="res://Scripts/Monster/field_monster.tscn" id="20_6wyfv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xm2m"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h2yge"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bvp3"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lquwl"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_272bh"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lswn8"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a6jrf"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xuqvo"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qsp4k"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(96, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kq58d"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(128, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_seu75"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(160, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_htxhm"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(0, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jq2sk"]
-atlas = ExtResource("1_ig7tw")
+atlas = ExtResource("3_7h3a5")
 region = Rect2(32, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kek77"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4c57u"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_efxa6"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dg77c"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycdy4"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w48qg"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vivmo"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2cqfq"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(64, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yaehf"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(96, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_074og"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(128, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cegan"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(160, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_82xsv"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(0, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_getpj"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(32, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ryguw"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(64, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d13ii"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(96, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1u8w0"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(128, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0odxb"]
-atlas = ExtResource("2_1bvp3")
+atlas = ExtResource("4_2vyqs")
 region = Rect2(160, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5vw27"]
@@ -283,7 +283,7 @@ radius = 8.0
 height = 28.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
-texture = ExtResource("4_lquwl")
+texture = ExtResource("5_f3pdi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -468,7 +468,7 @@ texture = ExtResource("4_lquwl")
 7:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_efxa6"]
-texture = ExtResource("5_5vw27")
+texture = ExtResource("6_4cfhi")
 0:0/0 = 0
 4:1/0 = 0
 5:1/0 = 0
@@ -1494,7 +1494,7 @@ sources/0 = SubResource("TileSetAtlasSource_7mycd")
 sources/2 = SubResource("TileSetAtlasSource_efxa6")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
-texture = ExtResource("4_lquwl")
+texture = ExtResource("5_f3pdi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1672,7 +1672,7 @@ texture = ExtResource("4_lquwl")
 7:12/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ycdy4"]
-texture = ExtResource("5_7mycd")
+texture = ExtResource("7_t1qkg")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -2342,7 +2342,7 @@ texture = ExtResource("5_7mycd")
 28:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dg77c"]
-texture = ExtResource("5_5vw27")
+texture = ExtResource("6_4cfhi")
 0:0/0 = 0
 15:1/0 = 0
 20:1/0 = 0
@@ -3365,7 +3365,7 @@ texture = ExtResource("5_5vw27")
 14:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2cqfq"]
-texture = ExtResource("7_ycdy4")
+texture = ExtResource("8_yiohk")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -3542,7 +3542,7 @@ sources/1 = SubResource("TileSetAtlasSource_ycdy4")
 sources/4 = SubResource("TileSetAtlasSource_2cqfq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
-texture = ExtResource("4_lquwl")
+texture = ExtResource("5_f3pdi")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.9911556, 8, 1.4878922, -0.32188416, 8, -2.175518, 8, 8)
 1:0/0 = 0
@@ -3749,7 +3749,7 @@ texture = ExtResource("4_lquwl")
 2:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5vw27"]
-texture = ExtResource("5_7mycd")
+texture = ExtResource("7_t1qkg")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -4497,7 +4497,7 @@ sources/3 = SubResource("TileSetAtlasSource_5vw27")
 tile_data = PackedInt32Array(262144, 1638400, 12, 327680, 1638400, 13, 393216, 1638400, 14, 458752, 1638400, 15, 131073, 1703936, 10, 196609, 1703936, 11, 262145, 1703936, 12, 327681, 1703936, 13, 393217, 1703936, 14, 458753, 1703936, 15, 65538, 1769472, 9, 131074, 1769472, 10, 196610, 1769472, 11, 262146, 1769472, 12, 327682, 1769472, 13, 393218, 1769472, 14, 458754, 1769472, 15, 3, 1835008, 8, 65539, 1835008, 9, 131075, 1835008, 10, 196611, 1835008, 11, 262147, 1835008, 12, 327683, 1835008, 13, 393219, 1835008, 14, 458755, 1835008, 15, 4, 1900544, 8, 65540, 1900544, 9, 131076, 1900544, 10, 196612, 1900544, 11, 262148, 1900544, 12, 327684, 1900544, 13, 393220, 1900544, 14, 458756, 1900544, 15, 5, 1966080, 8, 65541, 1966080, 9, 131077, 1966080, 10, 196613, 1966080, 11, 262149, 1966080, 12, 327685, 1966080, 13, 393221, 1966080, 14, 458757, 1966080, 15, 6, 2031616, 8, 65542, 2031616, 9, 131078, 2031616, 10, 196614, 2031616, 11, 262150, 2031616, 12, 327686, 2031616, 13, 393222, 2031616, 14, 458758, 2031616, 15, 7, 2097152, 8, 65543, 2097152, 9, 131079, 2097152, 10, 196615, 2097152, 11, 262151, 2097152, 12, 327687, 2097152, 13, 393223, 2097152, 14, 458759, 2097152, 15, 8, 2162688, 8, 65544, 2162688, 9, 131080, 2162688, 10, 196616, 2162688, 11, 262152, 2162688, 12, 327688, 2162688, 13, 393224, 2162688, 14, 458760, 2162688, 15, 65545, 2228224, 9, 131081, 2228224, 10, 196617, 2228224, 11, 262153, 2228224, 12, 327689, 2228224, 13, 393225, 2228224, 14, 458761, 2228224, 15, 131082, 2293760, 10, 196618, 2293760, 11, 262154, 2293760, 12, 327690, 2293760, 13, 393226, 2293760, 14, 458762, 2293760, 15, 262155, 2359296, 12, 327691, 2359296, 13, 393227, 2359296, 14)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kek77"]
-texture = ExtResource("6_272bh")
+texture = ExtResource("9_fr7jp")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -5096,7 +5096,7 @@ texture = ExtResource("6_272bh")
 35:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_074og"]
-texture = ExtResource("10_yaehf")
+texture = ExtResource("10_u7kye")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -5840,7 +5840,7 @@ sources/2 = SubResource("TileSetAtlasSource_074og")
 pattern_0 = SubResource("TileMapPattern_272bh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w48qg"]
-texture = ExtResource("8_efxa6")
+texture = ExtResource("11_prsup")
 0:0/0 = 0
 1:0/0 = 0
 1:0/0/z_index = 1
@@ -6149,7 +6149,7 @@ texture = ExtResource("8_efxa6")
 7:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, -0.2654686, 4.019684, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vivmo"]
-texture = ExtResource("9_dg77c")
+texture = ExtResource("12_y2t6j")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6306,7 +6306,7 @@ texture = ExtResource("9_dg77c")
 7:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yaehf"]
-texture = ExtResource("11_w48qg")
+texture = ExtResource("13_j3tya")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6385,51 +6385,51 @@ sources/1 = SubResource("TileSetAtlasSource_vivmo")
 sources/2 = SubResource("TileSetAtlasSource_yaehf")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4k2k6"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(0, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0rl1p"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(32, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ok6jj"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(64, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_facbu"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(96, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b1qrp"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(128, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_come4"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(160, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h8e4i"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(192, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4lmeg"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(224, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0cp0l"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(256, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2t1y"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(288, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gngh3"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(320, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0n3wm"]
-atlas = ExtResource("8_kek77")
+atlas = ExtResource("15_u4vhs")
 region = Rect2(352, 0, 32, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qnost"]
@@ -6484,7 +6484,7 @@ height = 32.0
 size = Vector2(71, 16)
 
 [node name="Main" type="Node2D" unique_id=1720422518]
-script = ExtResource("1_2cqfq")
+script = ExtResource("1_0mrai")
 
 [node name="World" type="Node2D" parent="." unique_id=1453959600]
 
@@ -6492,7 +6492,7 @@ script = ExtResource("1_2cqfq")
 z_index = 1
 position = Vector2(330, -200)
 collision_mask = 2
-script = ExtResource("1_0xm2m")
+script = ExtResource("2_2bdck")
 speed = 100.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/Player" unique_id=2082997196]
@@ -6538,7 +6538,7 @@ tile_set = SubResource("TileSet_vivmo")
 
 [node name="boiler" type="StaticBody2D" parent="World/Object" unique_id=424674010]
 position = Vector2(450, -140)
-script = ExtResource("8_4c57u")
+script = ExtResource("14_n76uu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/Object/boiler" unique_id=1596530]
 position = Vector2(-40, -56)
@@ -6551,7 +6551,7 @@ shape = SubResource("CapsuleShape2D_wnkbs")
 
 [node name="To village" type="Area2D" parent="World" unique_id=959997373]
 position = Vector2(200, 0)
-script = ExtResource("14_vivmo")
+script = ExtResource("16_mrhmb")
 target_scene_path = "uid://bhqcqhj4qi2bc"
 spawn_tag = "spawn_main"
 
@@ -6566,70 +6566,70 @@ position = Vector2(17, -309)
 
 [node name="Items" type="Node2D" parent="World" unique_id=1728310150]
 
-[node name="wood1" parent="World/Items" unique_id=139638402 instance=ExtResource("17_getpj")]
+[node name="wood1" parent="World/Items" unique_id=139638402 instance=ExtResource("17_3q5sw")]
 position = Vector2(-50, 0)
 item_id = "wood1"
 
-[node name="wood2" parent="World/Items" unique_id=1551246705 instance=ExtResource("17_getpj")]
+[node name="wood2" parent="World/Items" unique_id=1551246705 instance=ExtResource("17_3q5sw")]
 position = Vector2(0, -100)
 item_id = "wood2"
 
-[node name="wood3" parent="World/Items" unique_id=200188919 instance=ExtResource("17_getpj")]
+[node name="wood3" parent="World/Items" unique_id=200188919 instance=ExtResource("17_3q5sw")]
 position = Vector2(200, 0)
 item_id = "wood3"
 
-[node name="wood4" parent="World/Items" unique_id=1663118314 instance=ExtResource("17_getpj")]
+[node name="wood4" parent="World/Items" unique_id=1663118314 instance=ExtResource("17_3q5sw")]
 position = Vector2(-50, -70)
 item_id = "scroll_slime1"
 
-[node name="wood5" parent="World/Items" unique_id=67120156 instance=ExtResource("17_getpj")]
+[node name="wood5" parent="World/Items" unique_id=67120156 instance=ExtResource("17_3q5sw")]
 item_id = "scroll_slime1"
 
-[node name="wood6" parent="World/Items" unique_id=1517391072 instance=ExtResource("17_getpj")]
+[node name="wood6" parent="World/Items" unique_id=1517391072 instance=ExtResource("17_3q5sw")]
 position = Vector2(50, -50)
 item_id = "scroll_slime1"
 
-[node name="wood7" parent="World/Items" unique_id=1716193618 instance=ExtResource("17_getpj")]
+[node name="wood7" parent="World/Items" unique_id=1716193618 instance=ExtResource("17_3q5sw")]
 position = Vector2(-100, 0)
 item_id = "scroll_slime1"
 
-[node name="wood8" parent="World/Items" unique_id=1088923818 instance=ExtResource("17_getpj")]
+[node name="wood8" parent="World/Items" unique_id=1088923818 instance=ExtResource("17_3q5sw")]
 position = Vector2(-100, -70)
 item_id = "scroll_slime1"
 
-[node name="wood9" parent="World/Items" unique_id=2006955600 instance=ExtResource("17_getpj")]
+[node name="wood9" parent="World/Items" unique_id=2006955600 instance=ExtResource("17_3q5sw")]
 position = Vector2(100, -70)
 item_id = "scroll_slime1"
 
-[node name="wood10" parent="World/Items" unique_id=891667747 instance=ExtResource("17_getpj")]
+[node name="wood10" parent="World/Items" unique_id=891667747 instance=ExtResource("17_3q5sw")]
 position = Vector2(80, -100)
 item_id = "scroll_slime1"
 
-[node name="wood11" parent="World/Items" unique_id=121261448 instance=ExtResource("17_getpj")]
+[node name="wood11" parent="World/Items" unique_id=121261448 instance=ExtResource("17_3q5sw")]
 position = Vector2(20, -120)
 item_id = "scroll_slime1"
 
-[node name="wood12" parent="World/Items" unique_id=272539029 instance=ExtResource("17_getpj")]
+[node name="wood12" parent="World/Items" unique_id=272539029 instance=ExtResource("17_3q5sw")]
 position = Vector2(0, -40)
 item_id = "scroll_slime1"
 
-[node name="wood13" parent="World/Items" unique_id=1763232079 instance=ExtResource("17_getpj")]
+[node name="wood13" parent="World/Items" unique_id=1763232079 instance=ExtResource("17_3q5sw")]
 position = Vector2(-120, -100)
 item_id = "scroll_slime1"
 
-[node name="wood14" parent="World/Items" unique_id=502762440 instance=ExtResource("17_getpj")]
+[node name="wood14" parent="World/Items" unique_id=502762440 instance=ExtResource("17_3q5sw")]
 position = Vector2(50, 0)
 item_id = "scroll_slime1"
 
-[node name="slime_scroll" parent="World/Items" unique_id=704199473 instance=ExtResource("17_getpj")]
+[node name="slime_scroll" parent="World/Items" unique_id=704199473 instance=ExtResource("17_3q5sw")]
 item_id = "scroll_slime1"
 
-[node name="slime_scroll2" parent="World/Items" unique_id=1486123332 instance=ExtResource("17_getpj")]
+[node name="slime_scroll2" parent="World/Items" unique_id=1486123332 instance=ExtResource("17_3q5sw")]
 position = Vector2(0, -200)
 item_id = "scroll_slime1"
 
 [node name="SummonFollowers" type="Node2D" parent="World" unique_id=2085504901]
-script = ExtResource("18_074og")
+script = ExtResource("18_fmkow")
 
 [node name="MonsterContainer" type="Node2D" parent="World" unique_id=341856851]
 
@@ -6637,28 +6637,28 @@ script = ExtResource("18_074og")
 
 [node name="SlimeArea" type="Node2D" parent="World/SpawnAreas" unique_id=1939432458]
 position = Vector2(-130, -250)
-script = ExtResource("19_82xsv")
+script = ExtResource("19_rijul")
 monster_id = "golem"
 monster_type = "aggressive"
 spawn_radius = 50.0
-monster_scene = ExtResource("19_cegan")
+monster_scene = ExtResource("20_6wyfv")
 monster_container_path = NodePath("../../MonsterContainer")
 
 [node name="CorelArea" type="Node2D" parent="World/SpawnAreas" unique_id=811670332]
 position = Vector2(90, -150)
-script = ExtResource("19_82xsv")
+script = ExtResource("19_rijul")
 monster_type = "aggressive"
 spawn_radius = 50.0
-monster_scene = ExtResource("19_cegan")
+monster_scene = ExtResource("20_6wyfv")
 monster_container_path = NodePath("../../MonsterContainer")
 
 [node name="SlimeArea2" type="Node2D" parent="World/SpawnAreas" unique_id=689137287]
 position = Vector2(0, -200)
-script = ExtResource("19_82xsv")
+script = ExtResource("19_rijul")
 monster_id = "corel"
 spawn_count = 2
 spawn_radius = 50.0
-monster_scene = ExtResource("19_cegan")
+monster_scene = ExtResource("20_6wyfv")
 monster_container_path = NodePath("../../MonsterContainer")
 
 [connection signal="body_entered" from="World/To village" to="World/To village" method="_on_body_entered"]

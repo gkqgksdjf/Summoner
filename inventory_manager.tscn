@@ -1,78 +1,78 @@
 [gd_scene format=3 uid="uid://cjhrpolvcg4v0"]
 
-[ext_resource type="Script" uid="uid://ehdhgx0wxn4a" path="res://inventory_ui.gd" id="1_jn3b8"]
-[ext_resource type="Script" uid="uid://cm78jauvuadd0" path="res://inventory_manager.gd" id="1_to27r"]
-[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_5bopx"]
-[ext_resource type="Texture2D" uid="uid://dlm0hej221bhu" path="res://UI/1779030067404.png" id="2_5mmst"]
-[ext_resource type="Script" uid="uid://cu2fypbp1gf2j" path="res://explain_sheet.gd" id="3_o6um4"]
-[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="4_m5yu5"]
-[ext_resource type="Script" uid="uid://7oxinnbowb8s" path="res://input_number.gd" id="5_bbtsg"]
-[ext_resource type="Texture2D" uid="uid://bkdbsuvo2hoya" path="res://UI/Inventory_Summon/소환수인벤토리.png" id="6_bp180"]
-[ext_resource type="Texture2D" uid="uid://bkredsjk55cev" path="res://Resources/Objects (1).png" id="7_11m6a"]
-[ext_resource type="PackedScene" uid="uid://bag10csa7uqa" path="res://summon_slot.tscn" id="7_57w2o"]
-[ext_resource type="Script" uid="uid://b4skana710cpp" path="res://summon_ui.gd" id="7_snms6"]
-[ext_resource type="Texture2D" uid="uid://c8jmqtn244vpl" path="res://Resources/other objects.png" id="8_d4mjc"]
-[ext_resource type="Texture2D" uid="uid://b251b65fgx2gn" path="res://Resources/file_0000000083b87206a1dea971e35901b4.png" id="9_bp180"]
-[ext_resource type="Texture2D" uid="uid://bqnf7g4nikug7" path="res://Resources/other_icons.png" id="9_v0pqq"]
+[ext_resource type="Script" uid="uid://cm78jauvuadd0" path="res://Scripts/Manager/inventory_manager.gd" id="1_ap15w"]
+[ext_resource type="Texture2D" uid="uid://dlm0hej221bhu" path="res://UI/1779030067404.png" id="2_a8p4i"]
+[ext_resource type="Script" uid="uid://ehdhgx0wxn4a" path="res://Scripts/UI/inventory_ui.gd" id="3_xfd26"]
+[ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="4_r8xuq"]
+[ext_resource type="Script" uid="uid://cu2fypbp1gf2j" path="res://Scripts/UI/explain_sheet.gd" id="5_50m83"]
+[ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="6_bsle8"]
+[ext_resource type="Texture2D" uid="uid://bkdbsuvo2hoya" path="res://UI/Inventory_Summon/소환수인벤토리.png" id="7_i3u33"]
+[ext_resource type="Script" uid="uid://b4skana710cpp" path="res://Scripts/UI/summon_ui.gd" id="8_glais"]
+[ext_resource type="PackedScene" uid="uid://bag10csa7uqa" path="res://Scripts/UI/summon_slot.tscn" id="9_1dhur"]
+[ext_resource type="Texture2D" uid="uid://b251b65fgx2gn" path="res://Resources/file_0000000083b87206a1dea971e35901b4.png" id="10_1pxo7"]
+[ext_resource type="Texture2D" uid="uid://bkredsjk55cev" path="res://Resources/Objects (1).png" id="11_wleah"]
+[ext_resource type="Texture2D" uid="uid://c8jmqtn244vpl" path="res://Resources/other objects.png" id="12_ttigu"]
+[ext_resource type="Texture2D" uid="uid://bqnf7g4nikug7" path="res://Resources/other_icons.png" id="13_m1e8j"]
+[ext_resource type="Script" uid="uid://7oxinnbowb8s" path="res://Scripts/UI/input_number.gd" id="14_5ov1q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dmt4w"]
-atlas = ExtResource("2_5mmst")
+atlas = ExtResource("2_a8p4i")
 region = Rect2(1128, 383, 60, 56)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5bopx"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(16, 16, 64, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o6um4"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(800, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m5yu5"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(116, 338, 56, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bbtsg"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(1024, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qslx4"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(768, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k2me4"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(864, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jekyr"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(864, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bp2nh"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(360, 780, 48, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_11m6a"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(116, 338, 56, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kwpvc"]
-atlas = ExtResource("9_bp180")
+atlas = ExtResource("10_1pxo7")
 region = Rect2(144, 247, 228, 225)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lep18"]
-atlas = ExtResource("9_bp180")
+atlas = ExtResource("10_1pxo7")
 region = Rect2(1027, 288, 384, 371)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mtaq0"]
-atlas = ExtResource("9_bp180")
+atlas = ExtResource("10_1pxo7")
 region = Rect2(628, 235, 248, 243)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nxro1"]
-atlas = ExtResource("9_bp180")
+atlas = ExtResource("10_1pxo7")
 region = Rect2(613, 535, 267, 221)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g1scl"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(920, 0, 48, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_11m6a"]
@@ -90,7 +90,7 @@ axis_stretch_vertical = 1
 region_rect = Rect2(2, 418, 90, 36)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_srnhx"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(2, 418, 90, 36)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g1scl"]
@@ -104,7 +104,7 @@ axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_57w2o"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(2, 418, 90, 36)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kwpvc"]
@@ -120,11 +120,11 @@ axis_stretch_vertical = 1
 [sub_resource type="ButtonGroup" id="ButtonGroup_11m6a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v0pqq"]
-atlas = ExtResource("7_11m6a")
+atlas = ExtResource("11_wleah")
 region = Rect2(241, 118, 15, 14)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d4mjc"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(2, 418, 90, 36)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lep18"]
@@ -152,7 +152,7 @@ axis_stretch_vertical = 1
 region_rect = Rect2(2, 418, 90, 36)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dmt4w"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 texture_margin_left = 16.0
 texture_margin_top = 16.0
 texture_margin_right = 16.0
@@ -165,23 +165,23 @@ region_rect = Rect2(2, 418, 90, 36)
 [sub_resource type="ButtonGroup" id="ButtonGroup_d4mjc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_snms6"]
-atlas = ExtResource("7_11m6a")
+atlas = ExtResource("11_wleah")
 region = Rect2(1, 152, 13, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bp180"]
-atlas = ExtResource("8_d4mjc")
+atlas = ExtResource("12_ttigu")
 region = Rect2(1, 33, 15, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5mmst"]
-atlas = ExtResource("9_v0pqq")
+atlas = ExtResource("13_m1e8j")
 region = Rect2(119, 7, 17, 17)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4u5k"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(16, 16, 64, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yjakb"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(768, 64, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_abqjc"]
@@ -192,7 +192,7 @@ atlas = SubResource("CompressedTexture2D_abqjc")
 region = Rect2(800, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_67xb0"]
-atlas = ExtResource("2_5bopx")
+atlas = ExtResource("4_r8xuq")
 region = Rect2(768, 64, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d13ii"]
@@ -203,12 +203,12 @@ texture = SubResource("CompressedTexture2D_d13ii")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d4mjc"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 modulate_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v0pqq"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1u8w0"]
@@ -219,12 +219,12 @@ texture = SubResource("CompressedTexture2D_1u8w0")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srnhx"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 modulate_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_57w2o"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lswn8"]
@@ -235,12 +235,12 @@ texture = SubResource("CompressedTexture2D_lswn8")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_snms6"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 modulate_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bp180"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xuqvo"]
@@ -251,12 +251,12 @@ texture = SubResource("CompressedTexture2D_xuqvo")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5mmst"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 modulate_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bp2nh"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kq58d"]
@@ -267,12 +267,12 @@ texture = SubResource("CompressedTexture2D_kq58d")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qslx4"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 modulate_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k2me4"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0odxb"]
@@ -283,17 +283,17 @@ texture = SubResource("CompressedTexture2D_0odxb")
 region_rect = Rect2(864, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_to27r"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 modulate_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_11m6a"]
-texture = ExtResource("2_5bopx")
+texture = ExtResource("4_r8xuq")
 region_rect = Rect2(864, 0, 32, 32)
 
 [node name="InventoryManager" type="CanvasLayer" unique_id=1695723757]
 layer = 2
-script = ExtResource("1_to27r")
+script = ExtResource("1_ap15w")
 
 [node name="InventoryButton" type="TextureButton" parent="." unique_id=1520947097]
 z_index = 1
@@ -326,7 +326,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 mouse_filter = 1
-script = ExtResource("1_jn3b8")
+script = ExtResource("3_xfd26")
 
 [node name="Background" type="NinePatchRect" parent="InventoryUI" unique_id=625065653]
 custom_minimum_size = Vector2(1920, 1080)
@@ -394,7 +394,7 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-script = ExtResource("3_o6um4")
+script = ExtResource("5_50m83")
 
 [node name="NameLabel" type="Label" parent="InventoryUI/Background/ExplainSheet" unique_id=735766836]
 layout_mode = 1
@@ -410,7 +410,7 @@ offset_bottom = 37.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 130
 
 [node name="DescriptionLabel" type="Label" parent="InventoryUI/Background/ExplainSheet" unique_id=1089745881]
@@ -427,7 +427,7 @@ offset_right = 225.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 autowrap_mode = 3
 
@@ -518,7 +518,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 30
 text = "x1"
 
@@ -555,7 +555,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 30
 text = "x10"
 
@@ -575,7 +575,7 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(0, 50)
 theme_override_colors/font_color = Color(0.4509804, 0.03137255, 0.2627451, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 autowrap_mode = 3
 
@@ -602,7 +602,7 @@ anchor_bottom = 0.02
 offset_bottom = 82.8
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.4509804, 0.03137255, 0.2627451, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 150
 vertical_alignment = 1
 autowrap_mode = 2
@@ -664,8 +664,8 @@ anchor_right = 0.99
 anchor_bottom = 0.99
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_bp180")
-script = ExtResource("7_snms6")
+texture = ExtResource("7_i3u33")
+script = ExtResource("8_glais")
 
 [node name="MainSummon" type="Control" parent="InventoryUI/Background/Summon" unique_id=493892178]
 layout_mode = 1
@@ -687,15 +687,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 38
 
-[node name="Main1" parent="InventoryUI/Background/Summon/MainSummon/Main" unique_id=1244937285 instance=ExtResource("7_57w2o")]
+[node name="Main1" parent="InventoryUI/Background/Summon/MainSummon/Main" unique_id=1244937285 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(390, 370)
 layout_mode = 2
 
-[node name="Main2" parent="InventoryUI/Background/Summon/MainSummon/Main" unique_id=690764241 instance=ExtResource("7_57w2o")]
+[node name="Main2" parent="InventoryUI/Background/Summon/MainSummon/Main" unique_id=690764241 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(390, 370)
 layout_mode = 2
 
-[node name="Main3" parent="InventoryUI/Background/Summon/MainSummon/Main" unique_id=1715383967 instance=ExtResource("7_57w2o")]
+[node name="Main3" parent="InventoryUI/Background/Summon/MainSummon/Main" unique_id=1715383967 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(390, 370)
 layout_mode = 2
 
@@ -751,23 +751,23 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 33
 
-[node name="Sub1" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=2067365039 instance=ExtResource("7_57w2o")]
+[node name="Sub1" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=2067365039 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub2" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=1445184178 instance=ExtResource("7_57w2o")]
+[node name="Sub2" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=1445184178 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub3" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=860576231 instance=ExtResource("7_57w2o")]
+[node name="Sub3" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=860576231 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub4" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=1447959684 instance=ExtResource("7_57w2o")]
+[node name="Sub4" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=1447959684 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub5" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=400803344 instance=ExtResource("7_57w2o")]
+[node name="Sub5" parent="InventoryUI/Background/Summon/SubSummon/Sub_first" unique_id=400803344 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
@@ -782,23 +782,23 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 33
 
-[node name="Sub6" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=538733618 instance=ExtResource("7_57w2o")]
+[node name="Sub6" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=538733618 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub7" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1889081027 instance=ExtResource("7_57w2o")]
+[node name="Sub7" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1889081027 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub8" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1552392945 instance=ExtResource("7_57w2o")]
+[node name="Sub8" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1552392945 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub9" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1126878018 instance=ExtResource("7_57w2o")]
+[node name="Sub9" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1126878018 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
-[node name="Sub10" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1293216147 instance=ExtResource("7_57w2o")]
+[node name="Sub10" parent="InventoryUI/Background/Summon/SubSummon/Sub_second" unique_id=1293216147 instance=ExtResource("9_1dhur")]
 custom_minimum_size = Vector2(220, 182)
 layout_mode = 2
 
@@ -823,7 +823,7 @@ anchor_right = 0.9
 anchor_bottom = 0.1
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 80
 horizontal_alignment = 1
 
@@ -854,7 +854,7 @@ texture = SubResource("AtlasTexture_kwpvc")
 custom_minimum_size = Vector2(100, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 text = "STR"
 
@@ -862,7 +862,7 @@ text = "STR"
 custom_minimum_size = Vector2(170, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 horizontal_alignment = 2
 
@@ -885,7 +885,7 @@ texture = SubResource("AtlasTexture_lep18")
 custom_minimum_size = Vector2(100, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 text = "DEX"
 
@@ -893,7 +893,7 @@ text = "DEX"
 custom_minimum_size = Vector2(170, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 horizontal_alignment = 2
 
@@ -916,7 +916,7 @@ texture = SubResource("AtlasTexture_mtaq0")
 custom_minimum_size = Vector2(100, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 text = "INT"
 
@@ -924,7 +924,7 @@ text = "INT"
 custom_minimum_size = Vector2(170, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 horizontal_alignment = 2
 
@@ -947,7 +947,7 @@ texture = SubResource("AtlasTexture_nxro1")
 custom_minimum_size = Vector2(100, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 text = "VIT"
 
@@ -955,7 +955,7 @@ text = "VIT"
 custom_minimum_size = Vector2(170, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 100
 horizontal_alignment = 2
 
@@ -981,7 +981,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 60
 text = "편성"
 horizontal_alignment = 1
@@ -996,7 +996,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 60
 text = "해제"
 horizontal_alignment = 1
@@ -1023,7 +1023,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 60
 text = "교체"
 horizontal_alignment = 1
@@ -1038,7 +1038,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 60
 text = "취소"
 horizontal_alignment = 1
@@ -1191,7 +1191,7 @@ offset_top = 100.0
 offset_right = 450.0
 offset_bottom = 159.0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "정말 버리시겠습니까?"
 horizontal_alignment = 1
@@ -1293,7 +1293,7 @@ offset_right = 200.0
 offset_bottom = 151.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "버릴 개수를 입력하세요."
 horizontal_alignment = 1
@@ -1315,12 +1315,12 @@ offset_bottom = -48.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.3, 1.3)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 60
 text = "1"
 alignment = 1
 virtual_keyboard_type = 2
-script = ExtResource("5_bbtsg")
+script = ExtResource("14_5ov1q")
 
 [node name="NumberingButton" type="HBoxContainer" parent="InventoryUI/Background/DeleteSheet_Multiple" unique_id=1245272922]
 custom_minimum_size = Vector2(300, 30)
@@ -1422,7 +1422,7 @@ offset_top = 100.0
 offset_right = 450.0
 offset_bottom = 159.0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "사용하시겠습니까?"
 horizontal_alignment = 1
@@ -1524,7 +1524,7 @@ offset_right = 200.0
 offset_bottom = 151.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "사용할 개수를 입력하세요."
 horizontal_alignment = 1
@@ -1546,12 +1546,12 @@ offset_bottom = -48.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.3, 1.3)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 60
 text = "1"
 alignment = 1
 virtual_keyboard_type = 2
-script = ExtResource("5_bbtsg")
+script = ExtResource("14_5ov1q")
 
 [node name="NumberingButton" type="HBoxContainer" parent="InventoryUI/Background/UseSheet_Multiple" unique_id=1864763826]
 custom_minimum_size = Vector2(300, 30)
@@ -1653,7 +1653,7 @@ offset_top = 100.0
 offset_right = 450.0
 offset_bottom = 159.0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "소환서 1개를
 사용하시겠습니까?"
@@ -1722,7 +1722,7 @@ offset_top = 100.0
 offset_right = 450.0
 offset_bottom = 159.0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "소환서 10개를
 사용하시겠습니까?"
@@ -1791,7 +1791,7 @@ offset_top = 100.0
 offset_right = 450.0
 offset_bottom = 159.0
 theme_override_colors/font_color = Color(0.45490196, 0.14901961, 0.21176471, 1)
-theme_override_fonts/font = ExtResource("4_m5yu5")
+theme_override_fonts/font = ExtResource("6_bsle8")
 theme_override_font_sizes/font_size = 70
 text = "갯수가 모자랍니다."
 horizontal_alignment = 1
@@ -1829,8 +1829,6 @@ mouse_filter = 2
 [connection signal="pressed" from="InventoryUI/Background/CloseButton" to="InventoryUI" method="_on_close_button_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/ExplainSheet/TrashButton" to="InventoryUI" method="_on_trash_button_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/ExplainSheet/UseButton" to="InventoryUI" method="_on_use_button_pressed"]
-[connection signal="pressed" from="InventoryUI/Background/ExplainSheet/ScrollButton_1" to="InventoryUI" method="_on_scroll_button_pressed" binds= [1]]
-[connection signal="pressed" from="InventoryUI/Background/ExplainSheet/ScrollButton10" to="InventoryUI" method="_on_scroll_button_pressed" binds= [10]]
 [connection signal="pressed" from="InventoryUI/Background/Summon/Explain/Join" to="InventoryUI/Background/Summon" method="_on_join_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/Summon/Explain/Change" to="InventoryUI/Background/Summon" method="_on_change_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/Category/Cat_Inventory" to="InventoryUI" method="_on_cat_inventory_pressed"]
@@ -1857,8 +1855,6 @@ mouse_filter = 2
 [connection signal="pressed" from="InventoryUI/Background/UseSheet_Multiple/NumberingButton/one_plus" to="InventoryUI/Background/UseSheet_Multiple/InputNumber" method="_on_one_plus_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/UseSheet_Multiple/NumberingButton/ten_plus" to="InventoryUI/Background/UseSheet_Multiple/InputNumber" method="_on_ten_plus_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/UseSheet_Multiple/NumberingButton/max" to="InventoryUI/Background/UseSheet_Multiple/InputNumber" method="_on_max_pressed"]
-[connection signal="pressed" from="InventoryUI/Background/ScrollSheet_Single/OK" to="InventoryUI" method="_on_ok_pressed" binds= [1]]
 [connection signal="pressed" from="InventoryUI/Background/ScrollSheet_Single/Cancel" to="InventoryUI" method="_on_cancel_pressed"]
-[connection signal="pressed" from="InventoryUI/Background/ScrollSheet_Multiple/OK" to="InventoryUI" method="_on_ok_pressed" binds= [10]]
 [connection signal="pressed" from="InventoryUI/Background/ScrollSheet_Multiple/Cancel" to="InventoryUI" method="_on_cancel_pressed"]
 [connection signal="pressed" from="InventoryUI/Background/error/error_ok" to="InventoryUI" method="_on_error_ok_pressed"]

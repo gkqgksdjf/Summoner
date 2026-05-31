@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dp3gcm1e0ycdm"]
 
-[ext_resource type="Script" uid="uid://dydtnwkx7buho" path="res://summon_follower.gd" id="1_vyvu2"]
+[ext_resource type="Script" uid="uid://dydtnwkx7buho" path="res://Scripts/Summon/summon_follower.gd" id="1_vyvu2"]
 [ext_resource type="SpriteFrames" uid="uid://cm6yq4a60h2vr" path="res://Summon_Anim/Slime1.tres" id="2_tts7x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vyvu2"]

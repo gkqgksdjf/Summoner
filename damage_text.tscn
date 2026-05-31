@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dodbnfovib06n"]
 
-[ext_resource type="Script" uid="uid://bnjyw87mf083t" path="res://damage_text.gd" id="1_xx71h"]
+[ext_resource type="Script" uid="uid://bnjyw87mf083t" path="res://Scripts/Battle/damage_text.gd" id="1_xx71h"]
 [ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="2_iqooj"]
 
 [node name="DamageText" type="Node2D" unique_id=897533334]

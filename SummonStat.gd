@@ -158,7 +158,7 @@ static func get_battle_stats(creature: Dictionary) -> Dictionary:
 		"def": round(def),
 
 		"attack_speed": attack_speed,
-		"summon_followerscrit_rate": crit_rate,
+		"crit_rate": crit_rate,
 		"crit_damage": crit_damage,
 
 		"skill_power": round(skill_power),

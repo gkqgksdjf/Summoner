@@ -1,6 +1,6 @@
 extends Node2D
 
-const FOLLOWER_SCENE = preload("res://summon_follower.tscn")
+const FOLLOWER_SCENE = preload("res://Scripts/Summon/summon_follower.tscn")
 
 @export var player_path: NodePath = NodePath("../Player")
 

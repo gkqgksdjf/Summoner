@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name FieldMonster
 
-const DAMAGE_TEXT_SCENE = preload("res://damage_text.tscn")
+const DAMAGE_TEXT_SCENE = preload("res://Scripts/Battle/damage_text.tscn")
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var target_label: Label = $TargetUI/TargetLabel

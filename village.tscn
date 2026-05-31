@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://bhqcqhj4qi2bc"]
 
-[ext_resource type="Script" uid="uid://bfblvhxlg3nwm" path="res://Scripts/village.gd" id="1_6t5gs"]
+[ext_resource type="Script" uid="uid://bfblvhxlg3nwm" path="res://Scripts/Map/village.gd" id="1_6t5gs"]
 [ext_resource type="Texture2D" uid="uid://corqedy5t04tu" path="res://Background/Market/Walls_street.png" id="1_wybox"]
-[ext_resource type="Script" uid="uid://5clt1mj8o0h2" path="res://Scripts/player.gd" id="2_6t5gs"]
+[ext_resource type="Script" uid="uid://5clt1mj8o0h2" path="res://Scripts/Object/player.gd" id="2_6t5gs"]
 [ext_resource type="Texture2D" uid="uid://bulcchnsm0ycd" path="res://Background/Basic/Ground_grass.png" id="3_e1lbn"]
 [ext_resource type="Texture2D" uid="uid://cexyojcyfuph4" path="res://Background/Basic/Herbalist_Idle.png" id="3_efnqa"]
 [ext_resource type="Texture2D" uid="uid://b0vci7m0ne6a2" path="res://Background/Market/Decorative_cracks.png" id="4_2ydvt"]
@@ -12,38 +12,31 @@
 [ext_resource type="Texture2D" uid="uid://boxioa0huxmg3" path="res://Background/Basic/Water_coasts.png" id="6_2ydvt"]
 [ext_resource type="Texture2D" uid="uid://q2ty2501dnue" path="res://Background/Market/Objects_single.png" id="7_i2c7c"]
 [ext_resource type="Texture2D" uid="uid://bew8ui23lwecm" path="res://Background/Island/Statues_animation1.png" id="9_w8nef"]
-[ext_resource type="Script" uid="uid://db6xy70hmfkm5" path="res://Scripts/merchant.gd" id="11_83oyx"]
 [ext_resource type="Texture2D" uid="uid://le5nnl7w54m3" path="res://Background/Market/Characters/Character_others_animation/Trader_magic_animation_with_shadow.png" id="11_bmj1j"]
-[ext_resource type="Script" uid="uid://c2fh336nhnvgt" path="res://Scripts/provisioner.gd" id="14_g2x0a"]
+[ext_resource type="Script" uid="uid://dpn7suvjkalnb" path="res://Scripts/Object/npc_idle.gd" id="13_lvl4c"]
 [ext_resource type="Texture2D" uid="uid://dcswr4u85su8j" path="res://Background/Market/Characters/Character_others_animation/Trader_fruits_animation.png" id="14_lohkk"]
-[ext_resource type="Script" uid="uid://dl761h4i7c6pq" path="res://Scripts/blacksmith.gd" id="16_qvv1m"]
 [ext_resource type="Texture2D" uid="uid://dk3fxba0pgmab" path="res://Background/Market/Characters/Character_others_animation/Trader_weapon_animation_with_shadow.png" id="17_jpnk7"]
-[ext_resource type="Script" uid="uid://bl2prcygsruj4" path="res://Scripts/bread.gd" id="18_46q1e"]
 [ext_resource type="Texture2D" uid="uid://ctmx0a6ldcqfn" path="res://Background/Market/Characters/Character_others_animation/Trader_bread_animation_with_shadow.png" id="18_jpnk7"]
 [ext_resource type="Texture2D" uid="uid://kfakq76boo27" path="res://Background/Market/Characters/Character_others_animation/Eater_animation.png" id="19_43vb3"]
-[ext_resource type="Script" uid="uid://bsuia14somjkc" path="res://Scripts/eater.gd" id="20_vq12f"]
+[ext_resource type="Script" uid="uid://b4k51xqa3tal4" path="res://Scripts/Object/npc_walk.gd" id="21_3sdjn"]
 [ext_resource type="Texture2D" uid="uid://d0ooll732lhxt" path="res://Background/Market/Characters/Character_others_animation/Flutist_animation_with_shadow.png" id="22_vq12f"]
-[ext_resource type="Script" uid="uid://0cgrtibibw51" path="res://Scripts/lute.gd" id="24_q7h4d"]
 [ext_resource type="Texture2D" uid="uid://bb1f3fetb1n22" path="res://Background/Market/Characters/Character_others_animation/Lute_player_animation_with_shadow.png" id="25_wecga"]
-[ext_resource type="Script" uid="uid://dow6iol3btt3n" path="res://Scripts/drinker.gd" id="26_5wk0x"]
 [ext_resource type="Texture2D" uid="uid://q68m17mgimru" path="res://Background/Market/Characters/Character_others_animation/Trader_drinks_animation_with_shadow.png" id="26_wecga"]
 [ext_resource type="Texture2D" uid="uid://f7dt5sf6gdxv" path="res://Background/Market/Characters/Character_citizens_animation/Citizen2_Idle_with_shadow.png" id="28_2y3sr"]
 [ext_resource type="Texture2D" uid="uid://31jpydq7n17b" path="res://Background/Market/Characters/Character_citizens_animation/Citizen1_Idle_with_shadow.png" id="28_3wx2v"]
-[ext_resource type="Script" uid="uid://4ge0xoilrcxp" path="res://Scripts/citizen_1.gd" id="28_byniu"]
 [ext_resource type="Texture2D" uid="uid://clalstw01yldf" path="res://Background/Market/Characters/Character_citizens_animation/Citizen2_Walk_with_shadow.png" id="29_l7ay4"]
 [ext_resource type="Texture2D" uid="uid://dpjpyk36w3igs" path="res://Background/Market/Characters/Character_citizens_animation/Citizen1_Walk_with_shadow.png" id="29_qyfc2"]
-[ext_resource type="Script" uid="uid://dfemjl8i02cee" path="res://Scripts/flutist.gd" id="30_ysj02"]
 [ext_resource type="Texture2D" uid="uid://w1jiqymxwxft" path="res://Background/Island/Statues_animation1_fix.png" id="32_2y3sr"]
-[ext_resource type="Script" uid="uid://cmqde7trg4i3i" path="res://Scripts/statue.gd" id="32_ysj02"]
+[ext_resource type="Script" uid="uid://cmqde7trg4i3i" path="res://Scripts/Object/statue.gd" id="32_ysj02"]
 [ext_resource type="Texture2D" uid="uid://bx1ogagcuklmn" path="res://Background/Market/Characters/Character_citizens_animation/Citizen3_Idle_with_shadow.png" id="34_3sdjn"]
-[ext_resource type="Script" uid="uid://bxdo3frfhongb" path="res://to_main.gd" id="35_2y3sr"]
+[ext_resource type="Script" uid="uid://bxdo3frfhongb" path="res://Scripts/Map/to_main.gd" id="35_2y3sr"]
 [ext_resource type="Texture2D" uid="uid://bt5doo7k1qs84" path="res://Background/Market/Characters/Character_citizens_animation/Citizen3_Walk_with_shadow.png" id="35_xejuv"]
 [ext_resource type="Texture2D" uid="uid://djqryoqd7itku" path="res://Background/Market/Characters/Character_citizens_animation/Citizen4_Idle_with_shadow.png" id="36_g3aas"]
 [ext_resource type="Texture2D" uid="uid://b7fgp8h8wj87f" path="res://Background/Market/Characters/Character_citizens_animation/Citizen4_Walk_with_shadow.png" id="37_n7pee"]
 [ext_resource type="Texture2D" uid="uid://dp7qe22wproct" path="res://Background/Market/Characters/Character_citizens_animation/Citizen5_Idle_with_shadow.png" id="38_6chth"]
 [ext_resource type="Texture2D" uid="uid://b40p2lp82b2ui" path="res://Background/Market/Characters/Character_citizens_animation/Citizen5_Walk_with_shadow.png" id="39_rnoyk"]
-[ext_resource type="PackedScene" uid="uid://b73i61vil7e07" path="res://item_field.tscn" id="43_rnoyk"]
-[ext_resource type="Script" uid="uid://d234ead1aalax" path="res://summon_followers.gd" id="44_lvl4c"]
+[ext_resource type="PackedScene" uid="uid://b73i61vil7e07" path="res://Scripts/UI/item_field.tscn" id="43_rnoyk"]
+[ext_resource type="Script" uid="uid://d234ead1aalax" path="res://Scripts/Summon/summon_followers.gd" id="44_lvl4c"]
 [ext_resource type="AudioStream" uid="uid://drfoxgcc8xbd6" path="res://BGM/260303_castle1.mp3" id="44_rnoyk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ydvt"]
@@ -9514,7 +9507,7 @@ position = Vector2(-8, 299)
 position = Vector2(-136, -140)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("11_83oyx")
+script = ExtResource("13_lvl4c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/NPC/Merchant" unique_id=666488860]
 shape = SubResource("CapsuleShape2D_i2c7c")
@@ -9527,7 +9520,7 @@ frame_progress = 0.92780924
 position = Vector2(82, -195)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("14_g2x0a")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Provisioner" unique_id=1555237217]
 sprite_frames = SubResource("SpriteFrames_eqd1c")
@@ -9539,7 +9532,7 @@ shape = SubResource("CapsuleShape2D_w8nef")
 position = Vector2(168, -96)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("16_qvv1m")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Blacksmith" unique_id=402723659]
 sprite_frames = SubResource("SpriteFrames_xejuv")
@@ -9551,7 +9544,7 @@ shape = SubResource("CapsuleShape2D_g3aas")
 position = Vector2(147, 83)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("18_46q1e")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Bread" unique_id=1965515216]
 position = Vector2(48, 40)
@@ -9567,7 +9560,7 @@ shape = SubResource("CapsuleShape2D_jpnk7")
 position = Vector2(264, 144)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("20_vq12f")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Eater" unique_id=1132553508]
 position = Vector2(0, 1.5)
@@ -9581,7 +9574,7 @@ shape = SubResource("CapsuleShape2D_suyqg")
 position = Vector2(20, 65)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("24_q7h4d")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Lute" unique_id=1688640048]
 sprite_frames = SubResource("SpriteFrames_7y26x")
@@ -9595,7 +9588,7 @@ shape = SubResource("CapsuleShape2D_hvfom")
 position = Vector2(-170, 120)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("26_5wk0x")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Drinker" unique_id=1374977055]
 sprite_frames = SubResource("SpriteFrames_s2dkp")
@@ -9607,7 +9600,7 @@ shape = SubResource("CapsuleShape2D_p0lr4")
 position = Vector2(80, -50)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("28_byniu")
+script = ExtResource("21_3sdjn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Citizen1" unique_id=1168936997]
 sprite_frames = SubResource("SpriteFrames_xk3jj")
@@ -9621,7 +9614,7 @@ shape = SubResource("CapsuleShape2D_3wx2v")
 position = Vector2(-25, 65)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("30_ysj02")
+script = ExtResource("13_lvl4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Flutist" unique_id=955977376]
 sprite_frames = SubResource("SpriteFrames_kg43x")
@@ -9633,7 +9626,7 @@ shape = SubResource("CapsuleShape2D_rdnjy")
 position = Vector2(-100, -20)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("28_byniu")
+script = ExtResource("21_3sdjn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Citizen2" unique_id=737037427]
 sprite_frames = SubResource("SpriteFrames_5o84r")
@@ -9647,7 +9640,7 @@ shape = SubResource("CapsuleShape2D_3wx2v")
 position = Vector2(70, 110)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("28_byniu")
+script = ExtResource("21_3sdjn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Citizen3" unique_id=701154919]
 sprite_frames = SubResource("SpriteFrames_ge77w")
@@ -9661,7 +9654,7 @@ shape = SubResource("CapsuleShape2D_3wx2v")
 position = Vector2(-130, -50)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("28_byniu")
+script = ExtResource("21_3sdjn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Citizen4" unique_id=181056372]
 sprite_frames = SubResource("SpriteFrames_nxrr3")
@@ -9675,7 +9668,7 @@ shape = SubResource("CapsuleShape2D_3wx2v")
 position = Vector2(-80, 90)
 collision_layer = 2
 collision_mask = 7
-script = ExtResource("28_byniu")
+script = ExtResource("21_3sdjn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/NPC/Citizen5" unique_id=109886472]
 sprite_frames = SubResource("SpriteFrames_6x81q")
