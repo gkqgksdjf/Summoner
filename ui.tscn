@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cse6srnqwlsqv"]
 
-[ext_resource type="Script" uid="uid://bb6pq11gqw2h0" path="res://ui.gd" id="1_nltto"]
+[ext_resource type="Script" uid="uid://bb6pq11gqw2h0" path="res://Scripts/UI/ui.gd" id="1_nltto"]
 [ext_resource type="PackedScene" uid="uid://ddo47f38ulwyw" path="res://addons/joystick_addon/joystick.tscn" id="2_ibotj"]
 [ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="3_n5ude"]
 [ext_resource type="FontFile" uid="uid://bs6dboump5d50" path="res://UI/Font/Probly8Denser-CJK.ttf" id="4_y4yjw"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://chsmnmbk1fwep" path="res://UI/Tactics_buttons2.png" id="6_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://bra3h8sxd13k4" path="res://UI/Tactics_buttons1.png" id="7_irxef"]
 [ext_resource type="Texture2D" uid="uid://dlm0hej221bhu" path="res://UI/1779030067404.png" id="8_irxef"]
-[ext_resource type="PackedScene" uid="uid://dodbnfovib06n" path="res://damage_text.tscn" id="11_e2l4f"]
+[ext_resource type="PackedScene" uid="uid://dodbnfovib06n" path="res://Scripts/Battle/damage_text.tscn" id="11_e2l4f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnost"]
 atlas = ExtResource("3_n5ude")

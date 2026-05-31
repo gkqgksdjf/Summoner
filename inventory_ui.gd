@@ -20,8 +20,8 @@ extends Control
 @onready var cat_summon = $Background/Category/Cat_Summon
 @onready var popup_layer: Control = $"../PopupLayer"
 
-const SLOT_SCENE = preload("res://item_slot.tscn")
-const SUMMON_POPUP_SCENE: PackedScene = preload("res://summon_popup.tscn")
+const SLOT_SCENE = preload("res://Scripts/UI/item_slot.tscn")
+const SUMMON_POPUP_SCENE: PackedScene = preload("res://Scripts/UI/summon_popup.tscn")
 
 var _summon_popup: Control = null
 var current_selected_slot = null 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bag10csa7uqa"]
 
-[ext_resource type="Script" uid="uid://d3862r8mcxi3s" path="res://summon_slot.gd" id="1_tgcjv"]
+[ext_resource type="Script" uid="uid://d3862r8mcxi3s" path="res://Scripts/UI/summon_slot.gd" id="1_tgcjv"]
 [ext_resource type="Texture2D" uid="uid://c48n5g5okbr38" path="res://UI/32x32/Modern_UI_Style_1_32x32.png" id="2_kjrfi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kjrfi"]
