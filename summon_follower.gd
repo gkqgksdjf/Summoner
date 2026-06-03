@@ -27,6 +27,9 @@ var combat_target = null
 var attack_timer := 0.0
 var attack_range := 45.0
 
+enum State { FOLLOW, COMBAT }
+var state: State = State.FOLLOW
+
 func setup(creature_uid: int, player: CharacterBody2D, idx: int) -> void:
 	is_initialized = false
 
@@ -41,7 +44,6 @@ func setup(creature_uid: int, player: CharacterBody2D, idx: int) -> void:
 
 	var frames = load(creature["frames_path"])
 	anim.sprite_frames = frames
-	#anim.scale = Vector2(1.0, 1.0)
 	SpriteUtil.apply_normalized_scale(anim, frames, creature.name, 80.0)
 
 	_set_base_offset()
@@ -51,14 +53,14 @@ func setup(creature_uid: int, player: CharacterBody2D, idx: int) -> void:
 	repath_timer = randf_range(0.0, repath_interval)
 	last_dir = Vector2.DOWN
 
-	# 여기서 play 하지 말고, 준비만 끝냄
 	is_initialized = true
 
 func _physics_process(delta: float) -> void:
-	if combat_target != null:
-		process_combat(delta)
-		return
-	
+	match state:
+		State.FOLLOW: _process_follow(delta)
+		State.COMBAT: _process_combat(delta)
+
+func _process_follow(delta: float) -> void:
 	if not is_initialized:
 		return
 	if owner_player == null:
@@ -92,6 +94,41 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	_update_animation()
+
+func _process_combat(delta: float) -> void:
+	if combat_target == null:
+		velocity = Vector2.ZERO
+		state = State.FOLLOW
+		return
+
+	if not is_instance_valid(combat_target):
+		combat_target = null
+		velocity = Vector2.ZERO
+		state = State.FOLLOW
+		return
+
+	var distance = global_position.distance_to(combat_target.global_position)
+
+	# 사거리 밖이면 접근
+	if distance > attack_range:
+		var dir = global_position.direction_to(combat_target.global_position)
+		last_dir = dir
+		velocity = dir * move_speed
+		move_and_slide()
+		_update_animation()
+		return
+
+	# 공격 준비
+	velocity = Vector2.ZERO
+	last_dir = global_position.direction_to(combat_target.global_position)
+	_update_animation()
+
+	# 공격
+	attack_timer -= delta
+	if attack_timer <= 0.0:
+		attack_target()
+		var atk_speed = battle_stats.get("attack_speed", 1.0)
+		attack_timer = 1.0 / atk_speed
 
 func _set_base_offset() -> void:
 	match slot_index:
@@ -132,12 +169,10 @@ func _safe_play(anim_name: String, flip: bool) -> void:
 
 	anim.flip_h = flip
 
-	# 이미 같은 애니메이션이면 다시 play 안 함
 	if anim.animation == anim_name and anim.is_playing():
 		return
 
 	anim.play(anim_name)
-	
 
 func _update_animation() -> void:
 	if not is_initialized:
@@ -165,45 +200,11 @@ func _update_animation() -> void:
 		_safe_play("walk_up", false)
 	else:
 		_safe_play("walk_down", false)
-		
+
 func update_slot_index(new_index: int) -> void:
 	slot_index = new_index
 	_set_base_offset()
 
-func process_combat(delta):
-	if combat_target == null:
-		return
-
-	if not is_instance_valid(combat_target):
-		combat_target = null
-		velocity = Vector2.ZERO
-		return
-		
-	var distance = global_position.distance_to(combat_target.global_position)
-	
-	# 사거리 밖이면 접근
-	if distance > attack_range:
-		var dir = global_position.direction_to(combat_target.global_position)
-		last_dir = dir
-		velocity = dir * move_speed
-
-		move_and_slide()
-		_update_animation()
-		return
-		
-	# 공격 준비
-	velocity = Vector2.ZERO
-	last_dir = global_position.direction_to(combat_target.global_position)
-	_update_animation()
-
-	# 공격
-	attack_timer -= delta
-	if attack_timer <= 0.0:
-		attack_target()
-		
-		var atk_speed = battle_stats.get("attack_speed", 1.0)
-		attack_timer = 1.0 / atk_speed
-		
 func attack_target():
 	if combat_target == null:
 		return
@@ -215,6 +216,7 @@ func attack_target():
 	print(creature.name, " 공격")
 	var atk = battle_stats.get("atk", 10.0)
 	combat_target.take_damage(atk)
-	
-func set_combat_target(target):
+
+func set_combat_target(target) -> void:
 	combat_target = target
+	state = State.COMBAT if target != null else State.FOLLOW

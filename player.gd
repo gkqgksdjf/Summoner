@@ -24,6 +24,9 @@ var combat_refresh_timer := 0.0
 
 var last_dir := Vector2.DOWN   # 기본 정면(아래)
 
+func _ready() -> void:
+	SceneManager.scene_changing.connect(_on_scene_changing)
+	
 func _physics_process(_delta):
 	if is_dead:
 		return
@@ -84,8 +87,6 @@ func play_walk_animation(dir: Vector2):
 		anim.flip_h = false
 	
 	anim.play()
-	
-
 
 func play_idle_animation():
 	if abs(last_dir.x) > abs(last_dir.y):
@@ -205,3 +206,8 @@ func command_attack(slot: int):
 
 func set_target(monster):
 	current_target = monster
+
+func _on_scene_changing() -> void:
+	current_target = null
+	locked_targets.clear()
+	combat_targets.clear()
