@@ -28,6 +28,7 @@ var current_target_slot := -1
 
 func _ready() -> void:
 	add_to_group("HUD")
+	SceneManager.scene_changing.connect(_on_scene_changing)
 
 	# Toast(Control)를 화면 전체 컨테이너로 강제
 	toast_root.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -141,3 +142,9 @@ func clear_portrait(slot_no):
 	if slot_no > 0:
 		target_buttons[slot_no - 1].texture_normal = null
 		target_buttons[slot_no - 1].texture_pressed = null
+
+func _on_scene_changing() -> void:
+	for slot in range(1,5):
+		clear_portrait(slot)
+		update_target_selection(slot, false)
+	current_target_slot = -1
