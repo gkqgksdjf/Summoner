@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bra3h8sxd13k4" path="res://UI/Tactics_buttons1.png" id="7_irxef"]
 [ext_resource type="Texture2D" uid="uid://dlm0hej221bhu" path="res://UI/1779030067404.png" id="8_irxef"]
 [ext_resource type="PackedScene" uid="uid://dodbnfovib06n" path="res://Scripts/Battle/damage_text.tscn" id="11_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://k0s50nqocai2" path="res://UI/PNG/character_panel.png" id="11_thmbh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnost"]
 atlas = ExtResource("3_n5ude")
@@ -140,6 +141,10 @@ region = Rect2(160, 80, 16, 16)
 atlas = ExtResource("6_e2l4f")
 region = Rect2(160, 80, 16, 16)
 margin = Rect2(1, 1, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xfaa"]
+atlas = ExtResource("11_thmbh")
+region = Rect2(96, 32, 88, 32)
 
 [node name="UI" type="CanvasLayer" unique_id=543786819]
 script = ExtResource("1_nltto")
@@ -843,6 +848,19 @@ custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_2u0ql")
 texture_pressed = SubResource("AtlasTexture_ndy3v")
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="SkillSlot/Box" unique_id=1844071368]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.6
+anchor_bottom = 0.3
+grow_horizontal = 2
+texture = SubResource("AtlasTexture_7xfaa")
+expand_mode = 1
 stretch_mode = 5
 
 [node name="DamageText" parent="." unique_id=897533334 instance=ExtResource("11_e2l4f")]
