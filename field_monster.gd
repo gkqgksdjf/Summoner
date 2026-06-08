@@ -8,6 +8,7 @@ const DAMAGE_TEXT_SCENE = preload("res://Scripts/Battle/damage_text.tscn")
 @onready var target_ui = $TargetUI
 @onready var background = $TargetUI/Background
 @onready var hp_bar: TextureProgressBar = $HPBar
+@onready var hp_label = $HPBar/Label
 @onready var player = get_tree().get_first_node_in_group("Player")
 
 @export var monster_id := "slime"
@@ -69,7 +70,7 @@ func setup(data: Dictionary) -> void:
 	creature_data = data
 
 	battle_stats = SummonStat.get_battle_stats(data)
-	attack_range = creature_data.get("attack_range", 45.0)
+	attack_range = battle_stats.get("attack_range", 45.0)
 
 	current_hp = battle_stats.max_hp
 	hp_bar.max_value = battle_stats.max_hp
@@ -252,10 +253,13 @@ func take_damage(amount: float):
 
 	if !is_in_combat:
 		is_in_combat = true
-
+	
 	hp_bar.visible = true
 	hp_bar_timer = 3.0
 	hp_bar.value = current_hp
+	
+	var max_hp = int(battle_stats.max_hp)
+	hp_label.text = str(int(current_hp)) + "/" + str(max_hp)
 
 	print(
 		creature_data.name,

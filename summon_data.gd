@@ -17,8 +17,11 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_HP",
 		"tank_type": "hp",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 4.0, "agi": 3.0, "int": 2.0, "vit": 8.0},
-		"attack_range": 1.0
 	},
 	"bomb_slime": {
 		"name": "폭탄 슬라임",
@@ -28,6 +31,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 5.0, "agi": 3.0, "int": 7.0, "vit": 4.0}
 	},
 	"poison_slime": {
@@ -38,6 +45,10 @@ var creatures_list = {
 		"habitat_type": "swamp",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 5.0, "int": 7.0, "vit": 5.0}
 	},
 	"fire_slime": {
@@ -48,6 +59,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 4.0, "agi": 4.0, "int": 8.0, "vit": 4.0}
 	},
 	"ice_slime": {
@@ -58,6 +73,10 @@ var creatures_list = {
 		"habitat_type": "snowfield",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 5.0, "int": 7.0, "vit": 5.0}
 	},
 	"electric_slime": {
@@ -68,6 +87,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 6.0, "int": 7.0, "vit": 4.0}
 	},
 	"magma_slime": {
@@ -79,6 +102,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_DEF",
 		"tank_type": "def",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 6.0, "agi": 2.0, "int": 4.0, "vit": 9.0}
 	},
 	"devil_slime": {
@@ -89,6 +116,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 4.0, "agi": 5.0, "int": 9.0, "vit": 5.0}
 	},
 	"skull_slime": {
@@ -99,6 +130,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 6.0, "int": 3.0, "vit": 6.0}
 	},
 
@@ -113,6 +148,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 2.0, "agi": 4.0, "int": 10.0, "vit": 5.0}
 	},
 	"ancient_beholder": {
@@ -123,6 +162,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 3.0, "agi": 4.0, "int": 12.0, "vit": 7.0}
 	},
 	"mutant_beholder": {
@@ -133,6 +176,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 4.0, "agi": 5.0, "int": 11.0, "vit": 7.0}
 	},
 
@@ -147,6 +194,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 4.0, "int": 6.0, "vit": 9.0}
 	},
 
@@ -161,6 +212,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "supporter",
 		"growth_type": "SUP_BUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 5.0, "int": 7.0, "vit": 4.0}
 	},
 
@@ -175,6 +230,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 5.0, "int": 4.0, "vit": 5.0}
 	},
 	"blood_demon": {
@@ -185,6 +244,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 9.0, "agi": 7.0, "int": 3.0, "vit": 6.0}
 	},
 	"infernion": {
@@ -195,6 +258,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 5.0, "int": 12.0, "vit": 8.0}
 	},
 
@@ -210,6 +277,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_DEF",
 		"tank_type": "def",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 5.0, "agi": 2.0, "int": 3.0, "vit": 8.0}
 	},
 	"dead_ent": {
@@ -221,6 +292,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_DEF",
 		"tank_type": "def",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 6.0, "agi": 2.0, "int": 3.0, "vit": 9.0}
 	},
 	"elder_ent": {
@@ -232,6 +307,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_HP",
 		"tank_type": "hp",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 6.0, "agi": 2.0, "int": 5.0, "vit": 11.0}
 	},
 
@@ -246,6 +325,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 2.0, "agi": 6.0, "int": 6.0, "vit": 3.0}
 	},
 	"phantom": {
@@ -256,6 +339,10 @@ var creatures_list = {
 		"habitat_type": "snowfield",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 5.0, "agi": 8.0, "int": 4.0, "vit": 4.0}
 	},
 	"shadow": {
@@ -266,6 +353,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 9.0, "int": 4.0, "vit": 5.0}
 	},
 
@@ -280,6 +371,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 5.0, "agi": 7.0, "int": 2.0, "vit": 4.0}
 	},
 	"gnoll_warrior": {
@@ -290,6 +385,10 @@ var creatures_list = {
 		"habitat_type": "desert",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 8.0, "agi": 5.0, "int": 2.0, "vit": 6.0}
 	},
 	"gnoll_slayer": {
@@ -300,6 +399,10 @@ var creatures_list = {
 		"habitat_type": "desert",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 10.0, "agi": 7.0, "int": 2.0, "vit": 6.0}
 	},
 
@@ -314,6 +417,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 5.0, "agi": 7.0, "int": 2.0, "vit": 3.0}
 	},
 	"goblin_raider": {
@@ -324,6 +431,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 8.0, "int": 2.0, "vit": 4.0}
 	},
 	"goblin_squadLeader": {
@@ -334,6 +445,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "supporter",
 		"growth_type": "SUP_BUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 5.0, "agi": 6.0, "int": 8.0, "vit": 5.0}
 	},
 
@@ -349,6 +464,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_DEF",
 		"tank_type": "def",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 5.0, "agi": 1.0, "int": 2.0, "vit": 9.0}
 	},
 	"crystal_golem": {
@@ -360,6 +479,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_DEF",
 		"tank_type": "def",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 5.0, "agi": 1.0, "int": 4.0, "vit": 10.0}
 	},
 	"varkan": {
@@ -371,6 +494,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_DEF",
 		"tank_type": "def",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 8.0, "agi": 1.0, "int": 4.0, "vit": 14.0}
 	},
 
@@ -385,6 +512,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 3.0, "agi": 6.0, "int": 6.0, "vit": 3.0}
 	},
 	"imp": {
@@ -395,6 +526,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 4.0, "agi": 6.0, "int": 8.0, "vit": 4.0}
 	},
 	"blood_imp": {
@@ -405,6 +540,10 @@ var creatures_list = {
 		"habitat_type": "volcano",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 8.0, "agi": 9.0, "int": 3.0, "vit": 5.0}
 	},
 
@@ -419,6 +558,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 2.0, "agi": 3.0, "int": 9.0, "vit": 4.0}
 	},
 	"lich_shaman": {
@@ -429,6 +572,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 2.0, "agi": 4.0, "int": 10.0, "vit": 5.0}
 	},
 	"necros": {
@@ -439,6 +586,10 @@ var creatures_list = {
 		"habitat_type": "snowfield",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 3.0, "agi": 4.0, "int": 13.0, "vit": 7.0}
 	},
 
@@ -453,6 +604,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 5.0, "agi": 6.0, "int": 2.0, "vit": 5.0}
 	},
 	"warrior_lizardman": {
@@ -463,6 +618,10 @@ var creatures_list = {
 		"habitat_type": "desert",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 6.0, "int": 2.0, "vit": 6.0}
 	},
 	"commander_lizardman": {
@@ -473,6 +632,10 @@ var creatures_list = {
 		"habitat_type": "desert",
 		"role": "supporter",
 		"growth_type": "SUP_BUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 6.0, "agi": 5.0, "int": 8.0, "vit": 6.0}
 	},
 
@@ -487,6 +650,10 @@ var creatures_list = {
 		"habitat_type": "forest",
 		"role": "supporter",
 		"growth_type": "SUP_HEAL",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 2.0, "agi": 3.0, "int": 7.0, "vit": 5.0}
 	},
 	"toxic_myconid": {
@@ -497,6 +664,10 @@ var creatures_list = {
 		"habitat_type": "swamp",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 2.0, "agi": 4.0, "int": 8.0, "vit": 5.0}
 	},
 	"hallucinogenic_myconid": {
@@ -507,6 +678,10 @@ var creatures_list = {
 		"habitat_type": "forest",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 90.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 2.0, "agi": 5.0, "int": 10.0, "vit": 5.0}
 	},
 
@@ -522,6 +697,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_HP",
 		"tank_type": "hp",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 5.0, "agi": 2.0, "int": 3.0, "vit": 8.0}
 	},
 	"absorbing_nepenthes": {
@@ -532,6 +711,10 @@ var creatures_list = {
 		"habitat_type": "forest",
 		"role": "supporter",
 		"growth_type": "SUP_HEAL",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 3.0, "int": 8.0, "vit": 7.0}
 	},
 	"venomous_nepenthes": {
@@ -542,6 +725,10 @@ var creatures_list = {
 		"habitat_type": "swamp",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 4.0, "agi": 4.0, "int": 10.0, "vit": 7.0}
 	},
 
@@ -557,6 +744,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_HP",
 		"tank_type": "hp",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 6.0, "agi": 3.0, "int": 2.0, "vit": 8.0}
 	},
 	"orc_raider": {
@@ -567,6 +758,10 @@ var creatures_list = {
 		"habitat_type": "forest",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 8.0, "agi": 5.0, "int": 2.0, "vit": 6.0}
 	},
 	"orc_warlord": {
@@ -577,6 +772,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 10.0, "agi": 5.0, "int": 3.0, "vit": 8.0}
 	},
 
@@ -591,6 +790,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 4.0, "agi": 8.0, "int": 2.0, "vit": 3.0}
 	},
 	"mutant_ratkin": {
@@ -601,6 +804,10 @@ var creatures_list = {
 		"habitat_type": "grassland",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 6.0, "agi": 8.0, "int": 3.0, "vit": 5.0}
 	},
 	"plague_ratkin": {
@@ -611,6 +818,10 @@ var creatures_list = {
 		"habitat_type": "swamp",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 7.0, "int": 9.0, "vit": 5.0}
 	},
 
@@ -625,6 +836,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 5.0, "agi": 5.0, "int": 2.0, "vit": 5.0}
 	},
 	"skeleton_warrior": {
@@ -635,6 +850,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 6.0, "int": 2.0, "vit": 5.0}
 	},
 	"skeleton_commander": {
@@ -645,6 +864,10 @@ var creatures_list = {
 		"habitat_type": "ruins",
 		"role": "supporter",
 		"growth_type": "SUP_BUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 5.0, "agi": 5.0, "int": 8.0, "vit": 6.0}
 	},
 
@@ -659,6 +882,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 7.0, "agi": 7.0, "int": 4.0, "vit": 5.0}
 	},
 	"vampire_lord": {
@@ -669,6 +896,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_SK",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 6.0, "agi": 6.0, "int": 9.0, "vit": 6.0}
 	},
 	"alucard": {
@@ -679,6 +910,10 @@ var creatures_list = {
 		"habitat_type": "dark_zone",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 12.0, "agi": 10.0, "int": 7.0, "vit": 8.0}
 	},
 
@@ -694,6 +929,10 @@ var creatures_list = {
 		"role": "tank",
 		"growth_type": "TANK_HP",
 		"tank_type": "hp",
+		
+		"attack_type": "melee",
+		"attack_range": 30.0,
+		"attack_speed": 0.8,
 		"base_stats": {"str": 4.0, "agi": 2.0, "int": 2.0, "vit": 9.0}
 	},
 	"decayed_zombie": {
@@ -704,6 +943,10 @@ var creatures_list = {
 		"habitat_type": "swamp",
 		"role": "supporter",
 		"growth_type": "SUP_DEBUFF",
+		
+		"attack_type": "ranged",
+		"attack_range": 100.0,
+		"attack_speed": 1.0,
 		"base_stats": {"str": 3.0, "agi": 3.0, "int": 7.0, "vit": 7.0}
 	},
 	"zombie_warrior": {
@@ -714,6 +957,10 @@ var creatures_list = {
 		"habitat_type": "swamp",
 		"role": "attacker",
 		"growth_type": "ATK_AS",
+		
+		"attack_type": "melee",
+		"attack_range": 50.0,
+		"attack_speed": 1.2,
 		"base_stats": {"str": 9.0, "agi": 3.0, "int": 2.0, "vit": 8.0}
 	}
 }

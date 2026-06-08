@@ -132,8 +132,11 @@ static func get_battle_stats(creature: Dictionary) -> Dictionary:
 	var def: float = 3.0 + stats.vit * def_scale
 	def *= mods.get("def", 1.0)
 
-	var attack_speed: float = 1.0 + stats.agi * ATTACK_SPEED_SCALE
+	#var attack_speed: float = 1.0 + stats.agi * ATTACK_SPEED_SCALE
+	var attack_speed = creature.get("attack_speed", 1.0)
 	attack_speed *= mods.get("attack_speed", 1.0)
+
+	var attack_range = creature.get("attack_range", 1.0)
 
 	var crit_rate: float = min(50.0, 5.0 + stats.agi * CRIT_RATE_SCALE)
 	crit_rate *= mods.get("crit_rate", 1.0)
@@ -158,6 +161,7 @@ static func get_battle_stats(creature: Dictionary) -> Dictionary:
 		"def": round(def),
 
 		"attack_speed": attack_speed,
+		"attack_range": attack_range,
 		"crit_rate": crit_rate,
 		"crit_damage": crit_damage,
 

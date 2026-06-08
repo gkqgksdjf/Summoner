@@ -25,7 +25,7 @@ var is_initialized: bool = false
 
 var combat_target = null
 var attack_timer := 0.0
-var attack_range := 45.0
+var attack_range := 0.0
 
 enum State { FOLLOW, COMBAT }
 var state: State = State.FOLLOW
@@ -41,6 +41,7 @@ func setup(creature_uid: int, player: CharacterBody2D, idx: int) -> void:
 	if creature == null or creature.is_empty():
 		return
 	battle_stats = SummonStat.get_battle_stats(creature)
+	attack_range = battle_stats.get("attack_range", 45.0)
 
 	var frames = load(creature["frames_path"])
 	anim.sprite_frames = frames
